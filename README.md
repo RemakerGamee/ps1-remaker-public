@@ -1,9 +1,11 @@
-# RetroRemakes PS1 Remaker
+# RetroRemakes PS4 Studio update channel
 
-Public beta **v0.18.3** — Windows Studio and Player for experimental native PS1 projects.
+This dedicated `ps4-studio-updates` branch distributes PS4 Studio. The PS1 main branch is separate.
 
-Download the public ZIP from this repository's **Releases** section. Extract the entire archive; Python 3.11+ with Tcl/Tk is required. Start `Start-PS1-Remaker.cmd` for Studio or `Start-PS1-Player.cmd` for Player. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK.
+Stable manifest: `updates/ps4/stable.json`.
 
-You must supply your own supported PS1 BIOS and game disc files. No BIOS or games are included. Building a game does not guarantee compatibility. Windows execution, physical controllers and commercial-game gameplay remain unverified for this public edition.
+Packages contain the complete Python application source, the Cartridge integration and its licenses, tests, research catalog and installation instructions. No games, firmware, keys, user settings or generated game projects are included.
 
-The package includes the public Studio and Player source, bundled tools, license terms, third-party notices, engine provenance and verification report. The bundled PSXRecomp engine uses the PolyForm Noncommercial license; see the complete terms inside the ZIP. This is a free noncommercial public beta.
+PS4 Studio v0.1.2 adds startup/manual update checks, verified downloads, restart-to-install, backups and rollback for handled replacement failures. Python 3.11+ with Tk is required. Windows installation behavior still needs validation on a Windows PC; 42 core/Cartridge/update tests pass on Linux.
+
+For maintenance, extract a package and use `build_update_release.py`. Publish immutable packages first; then update the stable manifest with the correct app ID, semantic version, byte size, SHA-256 and immutable HTTPS package URL.
