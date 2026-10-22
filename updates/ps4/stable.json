@@ -1,0 +1,10 @@
+{
+  "app_id": "retroremakes-ps4-studio",
+  "schema": 1,
+  "version": "0.1.2",
+  "sha256": "640159e5e83636d364ad65714a590649594d7fb6051cf7883e4921712fe6500b",
+  "size": 71266,
+  "url": "https://raw.githubusercontent.com/RemakerGamee/ps1-remaker-public/d1b01f1ed553cdf136c114456bfe3a2b30545486/packages/PS4-Studio-update-0.1.2.zip",
+  "notes": "Online update checks at startup and from the Updates tab. Verified downloads install after restart. Existing Cartridge integration, settings, tool paths and projects are preserved.",
+  "published": "2026-10-22"
+}
