@@ -1,6 +1,8 @@
 # PS1 game download catalog
 
-All 164 reviewed game downloads include an online updater for their exact disc revision. Native executable bytes remain unchanged by this updater retrofit. Supply your own disc and supported BIOS; gameplay compatibility is not guaranteed.
+Catalog lists 164 reviewed website packages; GitHub release downloads appear as verified mirroring completes. The first mirror is currently in progress.
+
+All 164 reviewed website game downloads include an online updater for their exact disc revision. Native executable bytes remain unchanged by this updater retrofit. Supply your own disc and supported BIOS; gameplay compatibility is not guaranteed.
 
 | Game | Serial | Region | GitHub download |
 | --- | --- | --- | --- |
