@@ -4,6 +4,7 @@ import json
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 import zipfile
 from pathlib import Path
 
@@ -180,6 +181,35 @@ class ProgramTests(unittest.TestCase):
     def test_unapproved_program_url(self):
         with self.assertRaises(ValueError):
             M.program_records({"programs": [{**self.record, "url": "/downloads/programs/xbox/Program.zip"}]})
+
+
+class PublicationTests(unittest.TestCase):
+    def record(self):
+        return {"file": "Game.zip", "serial": "SLUS-00001", "title": "Synthetic", "bytes": 42, "sha256": "a" * 64, "url": "/downloads/ps1/Game.zip"}
+
+    def test_draft_recovery_uses_release_id(self):
+        record = self.record()
+        tag = "game-" + "a" * 24
+        asset = {"name": "Game.zip", "size": 42, "digest": "sha256:" + "a" * 64, "browser_download_url": "https://github.com/example/asset"}
+        draft = {"id": 17, "draft": True, "html_url": "https://github.com/example/draft", "assets": [asset]}
+        with tempfile.TemporaryDirectory() as temporary, patch.object(M, "download") as download, patch.object(M, "mutate_json", return_value={**draft, "draft": False}) as mutate:
+            result = M.mirror(record, "RemakerGamee/ps1-remaker-public", Path(temporary), False, {tag: draft})
+        download.assert_not_called()
+        self.assertEqual(mutate.call_args.args[0], "repos/RemakerGamee/ps1-remaker-public/releases/17")
+        self.assertEqual(mutate.call_args.args[1], "PATCH")
+        self.assertTrue(result["reused"])
+
+    def test_new_upload_uses_asset_response_and_release_id(self):
+        record = self.record()
+        created = {"id": 27, "draft": True}
+        asset = {"size": 42, "digest": "sha256:" + "a" * 64, "browser_download_url": "https://github.com/example/asset"}
+        published = {"id": 27, "html_url": "https://github.com/example/release"}
+        with tempfile.TemporaryDirectory() as temporary, patch.object(M, "download", side_effect=lambda r, p: p.write_bytes(b"synthetic")), patch.object(M, "validate_zip"), patch.object(M, "mutate_json", side_effect=[created, asset, published]) as mutate:
+            result = M.mirror(record, "RemakerGamee/ps1-remaker-public", Path(temporary), False, {})
+        self.assertEqual(mutate.call_count, 3)
+        self.assertIn("uploads.github.com/repos/RemakerGamee/ps1-remaker-public/releases/27/assets?name=Game.zip", mutate.call_args_list[1].args[0])
+        self.assertEqual(mutate.call_args_list[2].args[0], "repos/RemakerGamee/ps1-remaker-public/releases/27")
+        self.assertTrue(result["uploaded"])
 
 
 if __name__ == "__main__":
