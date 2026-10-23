@@ -1,14 +1,14 @@
 # RetroRemakes PS1 Remaker
 
-Public beta **v0.21.2-public-beta** — Windows applications for experimental native PS1 projects.
+Public beta **v0.21.3-public-beta** — Windows applications for experimental native PS1 projects.
 
 Choose the download you need:
 
 | Download | Includes | Start here |
 | --- | --- | --- |
-| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.2-public-beta/PS1-Remaker-Public-v0.21.2-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
-| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.2-public-beta/PS1-Remaker-Only-Public-v0.21.2-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
-| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.2-public-beta/PS1-Player-Public-v0.21.2-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
+| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.3-public-beta/PS1-Remaker-Public-v0.21.3-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
+| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.3-public-beta/PS1-Remaker-Only-Public-v0.21.3-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
+| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.3-public-beta/PS1-Player-Public-v0.21.3-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
 
 Extract the entire archive. Python 3.11+ with Tcl/Tk is required. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK. Each application edition uses its own update identity and approved feed.
 
@@ -44,4 +44,9 @@ Adds an All games error history with Copy all errors and Save all error reports 
 ## European PAL support and separate downloads
 
 Clarifies and preserves European PAL PS1 disc support in Remaker. SLES and SCES disc identities use Europe metadata, and the game picker supports matching CUE/BIN and CHD discs without a USA-only title gate. Existing game-specific downloads still require the matching supported disc edition. Preserves Export Errors, saved all-game error history, save states, build progress, community submissions and private Player Updates. Existing update feeds and user data remain untouched. Synthetic PAL identity/selection checks do not establish full-game compatibility or a new remaster. Public downloads now provide separate Remaker-only, Player-only and combined packages, each following its own approved update feed.
+
+
+## True Color (optional)
+
+Adds a per-game Color mode choice in Renderer settings: Original (default) or True Color. On a compatible native build, True Color selects OpenGL and disables PS1 dithering/5-bit shaded-gradient quantization on eligible GPU output. The original textures, movies, guest VRAM readbacks and software rendering retain their original precision; this does not create missing source colors or HD artwork. The choice applies on the next launch through Remaker or Player. Unsupported builds and forced CPU presentation are refused with a clear message. Actual production-renderer gradient checks measured 249 red levels with True Color versus 32 with native dithering; this is a renderer test, not a retail gameplay claim. Keeps PAL disc support, all-game error export, save states, separate public program editions and private Player Updates. Community submission consent now explicitly identifies uploads as independent contributor versions rather than official RetroRemakes releases. Existing update feeds and user data are preserved.
 
