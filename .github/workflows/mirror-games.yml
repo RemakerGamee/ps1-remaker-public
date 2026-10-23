@@ -1,0 +1,42 @@
+name: Mirror reviewed PS1 game downloads
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - games/catalog.json
+      - scripts/mirror_games.py
+      - .github/workflows/mirror-games.yml
+  schedule:
+    - cron: '23 6 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ps1-game-release-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Check out catalog and mirror code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Run synthetic mirror validation tests
+        run: python3 -m unittest discover -s tests -p test_mirror_games.py
+      - name: Mirror checksum-verified game ZIPs
+        if: ${{ hashFiles('games/catalog.json') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: python3 scripts/mirror_games.py games/catalog.json --repo "$GH_REPO" --report github-mirror-report.json
+      - name: Save verification report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ps1-game-mirror-report
+          path: github-mirror-report.json
+          if-no-files-found: ignore
