@@ -3124,8 +3124,8 @@
       "file": "PS1-Remaker-Public-v0.21.0-public-beta.zip",
       "version": "0.21.0-public-beta",
       "url": "https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.0-public-beta/PS1-Remaker-Public-v0.21.0-public-beta.zip",
-      "bytes": 23346654,
-      "sha256": "f8721a0e24277445e5adc9b45570e59bb015e0f099cc543c6a8e97d8f766577c",
+      "bytes": 23346671,
+      "sha256": "b8fb8d8319c79e5de00172f6d93f9ee0eee687eb0ab2bf717adb33465a67b693",
       "product": "ps1-remaker-public",
       "title": "RetroRemakes PS1 Remaker Public"
     },
@@ -3134,7 +3134,7 @@
       "version": "0.21.0-public-beta",
       "url": "https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.0-public-beta/PS1-Player-Public-v0.21.0-public-beta.zip",
       "bytes": 100233,
-      "sha256": "efbcbd53a464126161098300b15893ef7b5264faac61ebc3aea74a337052a9b1",
+      "sha256": "3f933863889ed2eaa140c9adc7358f45ac36eb0520d98ae8728addf9eb94c28f",
       "product": "ps1-player-public",
       "title": "RetroRemakes PS1 Player Component"
     }
