@@ -8,9 +8,6 @@ on:
       - games/catalog.json
       - scripts/mirror_games.py
       - .github/workflows/mirror-games.yml
-  schedule:
-    - cron: '23 6 * * *'
-
 permissions:
   contents: write
 
