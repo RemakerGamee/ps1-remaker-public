@@ -1,14 +1,14 @@
 # RetroRemakes PS1 Remaker
 
-Public beta **v0.21.6-public-beta** — Windows applications for experimental native PS1 projects.
+Public beta **v0.21.7-public-beta** — Windows applications for experimental native PS1 projects.
 
 Choose the download you need:
 
 | Download | Includes | Start here |
 | --- | --- | --- |
-| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.6-public-beta/PS1-Remaker-Public-v0.21.6-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
-| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.6-public-beta/PS1-Remaker-Only-Public-v0.21.6-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
-| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.6-public-beta/PS1-Player-Public-v0.21.6-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
+| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.7-public-beta/PS1-Remaker-Public-v0.21.7-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
+| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.7-public-beta/PS1-Remaker-Only-Public-v0.21.7-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
+| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.7-public-beta/PS1-Player-Public-v0.21.7-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
 
 Extract the entire archive. Python 3.11+ with Tcl/Tk is required. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK. Each application edition uses its own update identity and approved feed.
 
@@ -64,4 +64,9 @@ The public Remaker now includes its licensed Windows x64 CHD decoder, so a fresh
 ## Self-contained Player CHD support
 
 Adds self-contained CHD selection and playback preparation to the public and private PS1 Player, using a pinned licensed decoder bundled in approved wrapper files. Supported owner-selected CHDs no longer depend on an external decoder path or a private Remaker installation. Existing CUE/BIN workflows, exact native-code revision checks, saves, settings and update feeds are preserved. The public Remaker downloads retain their licensed built-in CHD decoder and trusted-template import fix. Container matching retains 132 verified profiles across 164 published identities; 32 remain exact-disc-only. No BIOS, original disc images or native game executables are included or replaced. The third-party reported disc remains untested.
+
+
+## Multi-disc Player setup
+
+Improves public and private Player multi-disc setup: add matching discs together, then select a configured disc after boot once the native tray API is confirmed. Curated fallback definitions cover six families and fourteen approved native identities; other titles require matching package-provided metadata. Boot roles remain distinct: switching a mounted disc does not restart another story or turn Gran Turismo Arcade into Simulation. Includes reviewed loopback disc-control host sources for future Remaker builds and generates exact local disc-set metadata for verified curated sources. Existing private native builds may require Update Port/rebuild; a Player update alone cannot add a missing native API. Separately reviewed public game patches supply native runtime updates where required. Keeps exact roster checks, self-contained licensed CHD decoding and retained temporary files through owned game exit or Stop. No external decoder is required. Different game-code revisions remain rejected. This application update preserves installed game executables, BIOS, discs, saves and settings; no universal multi-disc or full-gameplay claim is made. Public game update 1.0.2 migrates fourteen specifically reviewed native runtime builds while retaining exact original guest-code and disc identity protections; original full-download archives remain unchanged. Actual Driver 2 swaps used a freshly built stock ABI2 BIOS helper. Alone in the Dark wrapper/swap validation used a documented scratch-only existing ABI1 BIOS fixture: this update does not establish that fresh ABI1 BIOS-helper generation is fixed, and no fixture or BIOS is distributed. For an existing website game download, close the game and Player, then run its Start-Update.cmd online updater to receive the game-specific runtime patch. Update program inside the standalone Player updates the shared Player, not an installed game executable.
 
