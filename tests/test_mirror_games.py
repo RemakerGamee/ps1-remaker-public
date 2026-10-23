@@ -133,5 +133,54 @@ class ZipTests(unittest.TestCase):
             M.validate_zip(self.path)
 
 
+class ProgramTests(unittest.TestCase):
+    def setUp(self):
+        self.directory = tempfile.TemporaryDirectory()
+        self.path = Path(self.directory.name) / "Program.zip"
+        self.record = {"product": "ps1-remaker-public", "version": "0.20.0-public-beta", "file": "Program.zip", "bytes": 42, "sha256": "a" * 64, "url": "/downloads/programs/ps1/Program.zip"}
+
+    def tearDown(self):
+        self.directory.cleanup()
+
+    def fixture(self, extra=None, manifest=None):
+        files = {"ps1_remaker.py": b"synthetic-script-never-executed"}
+        inventory = {name: hashlib.sha256(data).hexdigest() for name, data in files.items()}
+        metadata = manifest or {"schema": 1, "product": "ps1-remaker-public", "version": "0.20.0-public-beta", "files": inventory}
+        files.update(extra or {})
+        with zipfile.ZipFile(self.path, "w") as archive:
+            for name, data in files.items():
+                archive.writestr("PS1-Remaker-Public/" + name, data)
+            archive.writestr("PS1-Remaker-Public/UPDATE-MANIFEST.json", json.dumps(metadata))
+
+    def test_valid_program(self):
+        self.fixture()
+        M.validate_program_zip(self.path, self.record)
+        self.assertEqual(M.program_records({"programs": [self.record]}), [self.record])
+
+    def test_wrong_product(self):
+        self.fixture()
+        with self.assertRaises(ValueError):
+            M.validate_program_zip(self.path, {**self.record, "product": "ps1-player-public"})
+
+    def test_wrong_version(self):
+        self.fixture()
+        with self.assertRaises(ValueError):
+            M.validate_program_zip(self.path, {**self.record, "version": "0.21.0"})
+
+    def test_undeclared_program_file(self):
+        self.fixture(extra={"extra.py": b"synthetic"})
+        with self.assertRaises(ValueError):
+            M.validate_program_zip(self.path, self.record)
+
+    def test_tampered_program_file(self):
+        self.fixture(extra={"ps1_remaker.py": b"changed"})
+        with self.assertRaises(ValueError):
+            M.validate_program_zip(self.path, self.record)
+
+    def test_unapproved_program_url(self):
+        with self.assertRaises(ValueError):
+            M.program_records({"programs": [{**self.record, "url": "/downloads/programs/xbox/Program.zip"}]})
+
+
 if __name__ == "__main__":
     unittest.main()
