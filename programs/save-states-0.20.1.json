@@ -1,0 +1,49 @@
+{
+  "full": {
+    "file": "PS1-Remaker-Public-v0.20.1-public-beta.zip",
+    "version": "0.20.1-public-beta",
+    "bytes": 23320455,
+    "sha256": "8d32f890629a2ca6e3c41bee5d55a3494342e4b3c95a8d9738a2342357849d5a",
+    "ready": true,
+    "manifest_files": 2404,
+    "parts": [
+      {
+        "number": 1,
+        "bytes": 8388608,
+        "sha256": "9427102b0606ce5a6e49d132d8c7a220568f89662e40f9da47275834bcd40024"
+      },
+      {
+        "number": 2,
+        "bytes": 8388608,
+        "sha256": "d9801550cf4fb3783af52530dd960981e1c04fae1f47ac699ba572de6de37db6"
+      },
+      {
+        "number": 3,
+        "bytes": 6543239,
+        "sha256": "270896a572733bbab55d5a56bedcb7dc560ae79cb96eed78f868ea3b57e557a4"
+      }
+    ],
+    "url": "/downloads/programs/ps1/PS1-Remaker-Public-v0.20.1-public-beta.zip",
+    "title": "PS1 Remaker",
+    "bios_required": true,
+    "bios_included": false,
+    "windows_tested": false,
+    "tests_passed": 149
+  },
+  "player": {
+    "file": "PS1-Player-Public-v0.20.1-public-beta.zip",
+    "version": "0.20.1-public-beta",
+    "bytes": 90330,
+    "sha256": "9ff0ef0393208a4cee9f6762a96bc2d7dcf7cb5e44795a5bf446754d2785f7c1",
+    "ready": true,
+    "manifest_files": 30,
+    "parts": [
+      {
+        "number": 1,
+        "bytes": 90330,
+        "sha256": "9ff0ef0393208a4cee9f6762a96bc2d7dcf7cb5e44795a5bf446754d2785f7c1"
+      }
+    ],
+    "url": "/downloads/programs/ps1/player/PS1-Player-Public-v0.20.1-public-beta.zip"
+  }
+}
