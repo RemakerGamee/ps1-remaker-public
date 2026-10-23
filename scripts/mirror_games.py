@@ -11,6 +11,7 @@ import json
 import re
 import subprocess
 import tempfile
+import time
 import tomllib
 import urllib.parse
 import urllib.request
@@ -160,26 +161,58 @@ def gh(*arguments, capture=False):
     return subprocess.run(["gh", *arguments], check=True, text=True, capture_output=capture)
 
 
-def mirror(record, repository, working, dry_run):
+def release_index(repository):
+    result = {}
+    for page in range(1, 101):
+        releases = json.loads(gh("api", "repos/" + repository + "/releases?per_page=100&page=" + str(page), capture=True).stdout)
+        for release in releases:
+            tag = release["tag_name"]
+            if tag in result:
+                raise ValueError("Duplicate GitHub release tag; refusing ambiguous upload")
+            result[tag] = release
+        if len(releases) < 100:
+            return result
+    raise ValueError("GitHub release listing bound exceeded")
+
+
+LAST_MUTATION = 0.0
+
+
+def mutate_json(endpoint, method, payload_path=None, payload=None, content_type=None):
+    # GitHub limits content creation. Keep writes below 60/minute even when
+    # source downloads are cached; never spin or hammer a refused endpoint.
+    global LAST_MUTATION
+    delay = 1.1 - (time.monotonic() - LAST_MUTATION)
+    if delay > 0:
+        time.sleep(delay)
+    arguments = ["api", "--method", method, endpoint]
+    if payload is not None:
+        payload_path.write_text(json.dumps(payload), encoding="utf-8")
+    if payload_path is not None:
+        arguments += ["--input", str(payload_path)]
+    if content_type:
+        arguments += ["--header", "Content-Type: " + content_type]
+    LAST_MUTATION = time.monotonic()
+    return json.loads(gh(*arguments, capture=True).stdout)
+
+
+def mirror(record, repository, working, dry_run, releases=None):
     program = bool(record.get("product"))
     tag = (record["product"] + "-v" + record["version"]) if program else "game-" + record["sha256"][:24]
     latest = "true" if record.get("product") == "ps1-remaker-public" else "false"
     local = working / record["file"]
-    existing = None
-    if not dry_run:
-        view = subprocess.run(["gh", "api", "repos/" + repository + "/releases/tags/" + tag], capture_output=True, text=True)
-        if not view.returncode:
-            existing = json.loads(view.stdout)
-            assets = [a for a in existing.get("assets", []) if a["name"] == record["file"]]
-            if assets:
-                asset = assets[0]
-                if asset.get("size") != record["bytes"] or asset.get("digest") != "sha256:" + record["sha256"]:
-                    raise ValueError("Existing GitHub asset identity differs; refusing replacement")
-                if existing.get("draft"):
-                    gh("release", "edit", tag, "--repo", repository, "--draft=false", "--latest=" + latest)
-                return {"file": record["file"], "sha256": record["sha256"], "bytes": record["bytes"], "uploaded": True, "reused": True, "release": existing["html_url"], "download_url": asset["browser_download_url"]}
-        elif "404" not in view.stderr:
-            raise RuntimeError("GitHub release lookup failed; no upload attempted")
+    releases = {} if releases is None else releases
+    existing = releases.get(tag)
+    payload_path = working / "release-payload.json"
+    if existing is not None:
+        assets = [a for a in existing.get("assets", []) if a["name"] == record["file"]]
+        if assets:
+            asset = assets[0]
+            if asset.get("size") != record["bytes"] or asset.get("digest") != "sha256:" + record["sha256"]:
+                raise ValueError("Existing GitHub asset identity differs; refusing replacement")
+            if existing.get("draft"):
+                existing = mutate_json("repos/" + repository + "/releases/" + str(existing["id"]), "PATCH", payload_path, {"draft": False, "make_latest": latest})
+            return {"file": record["file"], "sha256": record["sha256"], "bytes": record["bytes"], "uploaded": True, "reused": True, "release": existing["html_url"], "download_url": asset["browser_download_url"]}
     download(record, local)
     if program:
         validate_program_zip(local, record)
@@ -189,23 +222,17 @@ def mirror(record, repository, working, dry_run):
         local.unlink()
         return {"file": record["file"], "sha256": record["sha256"], "bytes": record["bytes"], "download_verified": True, "uploaded": False}
     if existing is None:
-        notes = working / "release-notes.md"
-        notes.write_text(
-            ("RetroRemakes public PS1 Studio/Player update.\n\n" if program else "Experimental native PS1 project: " + (record.get("title") or record["serial"]) + " (" + record["serial"] + ").\n\n") +
-            "Supply your own original disc and supported BIOS. No disc or BIOS is included. Compatibility and gameplay are not guaranteed. Existing license terms remain in the ZIP.\n\n"
-            "Website: " + ORIGIN + record["url"] + "\n\nSHA256: `" + record["sha256"] + "`\nBytes: " + str(record["bytes"]) + "\n",
-            encoding="utf-8",
-        )
+        notes = ("RetroRemakes public PS1 Studio/Player update.\n\n" if program else "Experimental native PS1 project: " + (record.get("title") or record["serial"]) + " (" + record["serial"] + ").\n\n") + "Supply your own original disc and supported BIOS. No disc or BIOS is included. Compatibility and gameplay are not guaranteed. Existing license terms remain in the ZIP.\n\nWebsite: " + ORIGIN + record["url"] + "\n\nSHA256: `" + record["sha256"] + "`\nBytes: " + str(record["bytes"]) + "\n"
         title = (record.get("title") or record.get("serial") or record["file"]) + (" — " + record["serial"] if not program else " " + record["version"])
-        gh("release", "create", tag, "--repo", repository, "--draft", "--title", title, "--notes-file", str(notes))
-    gh("release", "upload", tag, str(local), "--repo", repository)
-    verified = json.loads(gh("api", "repos/" + repository + "/releases/tags/" + tag, capture=True).stdout)
-    asset = next(a for a in verified["assets"] if a["name"] == record["file"])
+        existing = mutate_json("repos/" + repository + "/releases", "POST", payload_path, {"tag_name": tag, "name": title, "body": notes, "draft": True})
+    release_id = existing["id"]
+    upload_url = "https://uploads.github.com/repos/" + repository + "/releases/" + str(release_id) + "/assets?name=" + urllib.parse.quote(record["file"], safe="")
+    asset = mutate_json(upload_url, "POST", local, content_type="application/zip")
     if asset["size"] != record["bytes"] or asset.get("digest") != "sha256:" + record["sha256"]:
         raise ValueError("GitHub uploaded asset failed identity verification")
-    gh("release", "edit", tag, "--repo", repository, "--draft=false", "--latest=" + latest)
+    published = mutate_json("repos/" + repository + "/releases/" + str(release_id), "PATCH", payload_path, {"draft": False, "make_latest": latest})
     local.unlink()
-    return {"file": record["file"], "sha256": record["sha256"], "bytes": record["bytes"], "uploaded": True, "release": verified["html_url"], "download_url": asset["browser_download_url"]}
+    return {"file": record["file"], "sha256": record["sha256"], "bytes": record["bytes"], "uploaded": True, "release": published["html_url"], "download_url": asset["browser_download_url"]}
 
 
 def main():
@@ -222,11 +249,10 @@ def main():
     programs = program_records(catalog)
     records = programs + games
     results = []
-    if not arguments.verify_downloads_only:
-        gh("auth", "status")
+    releases = {} if arguments.verify_downloads_only else release_index(arguments.repo)
     with tempfile.TemporaryDirectory(prefix="ps1-game-mirror-") as temporary:
         for index, record in enumerate(records):
-            result = mirror(record, arguments.repo, Path(temporary), arguments.verify_downloads_only)
+            result = mirror(record, arguments.repo, Path(temporary), arguments.verify_downloads_only, releases)
             results.append(result)
             arguments.report.write_text(json.dumps({"repository": arguments.repo, "expected_games": len(games), "expected_programs": len(programs), "verified_assets": len(results), "complete": len(results) == len(records), "results": results}, indent=2) + "\n", encoding="utf-8")
             print(f"{index + 1}/{len(records)} {record['file']}", flush=True)
