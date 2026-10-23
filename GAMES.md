@@ -1,6 +1,6 @@
 # PS1 game players
 
-The game ZIPs are published in this repository's [Releases](https://github.com/RemakerGamee/ps1-remaker-public/releases) section. Each game and disc revision has a separate checksum-addressed release. The website remains the original download and online-update source.
+The catalog lists reviewed website packages. GitHub release downloads appear as verified mirroring completes; the first mirror is currently in progress. See the [game index](games/README.md). Game ZIPs are hosted in this repository's [Releases](https://github.com/RemakerGamee/ps1-remaker-public/releases) section. Each game and disc revision has a separate checksum-addressed release. The website remains the original download and online-update source.
 
 These are experimental native player projects. Supply your own original game disc and supported BIOS. Neither is supplied here. Inclusion in the catalog does not establish successful gameplay or universal compatibility.
 
