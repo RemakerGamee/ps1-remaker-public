@@ -175,6 +175,33 @@ def release_index(repository):
     raise ValueError("GitHub release listing bound exceeded")
 
 
+def response_parts(output):
+    normalized = (output or "").replace("\r\n", "\n")
+    if not normalized.startswith("HTTP/"):
+        return {}, normalized
+    head, body = normalized.split("\n\n", 1)
+    headers = {}
+    for line in head.split("\n")[1:]:
+        if ":" in line:
+            key, value = line.split(":", 1)
+            headers[key.lower().strip()] = value.strip()
+    return headers, body
+
+
+def rate_delay(error, attempt):
+    headers, body = response_parts(error.stdout)
+    message = ((error.stderr or "") + body).lower()
+    if not ("secondary rate limit" in message or "api rate limit exceeded" in message or "retry-after" in headers or headers.get("x-ratelimit-remaining") == "0"):
+        return None
+    if headers.get("retry-after", "").isdigit():
+        delay = max(1, int(headers["retry-after"]))
+    elif headers.get("x-ratelimit-remaining") == "0" and headers.get("x-ratelimit-reset", "").isdigit():
+        delay = max(1, int(headers["x-ratelimit-reset"]) - int(time.time()) + 1)
+    else:
+        delay = 60 * 2 ** attempt
+    return delay if delay <= 3600 else None
+
+
 LAST_MUTATION = 0.0
 
 
@@ -185,15 +212,29 @@ def mutate_json(endpoint, method, payload_path=None, payload=None, content_type=
     delay = 1.1 - (time.monotonic() - LAST_MUTATION)
     if delay > 0:
         time.sleep(delay)
-    arguments = ["api", "--method", method, endpoint]
+    arguments = ["api", "--include", "--method", method, endpoint]
     if payload is not None:
         payload_path.write_text(json.dumps(payload), encoding="utf-8")
     if payload_path is not None:
         arguments += ["--input", str(payload_path)]
     if content_type:
         arguments += ["--header", "Content-Type: " + content_type]
-    LAST_MUTATION = time.monotonic()
-    return json.loads(gh(*arguments, capture=True).stdout)
+    for attempt in range(5):
+        LAST_MUTATION = time.monotonic()
+        try:
+            response = gh(*arguments, capture=True)
+            return json.loads(response_parts(response.stdout)[1])
+        except subprocess.CalledProcessError as error:
+            delay = rate_delay(error, attempt)
+            # Retry only an explicit rate refusal, never an ambiguous failed
+            # POST/network response that may already have created an asset.
+            if delay is None or attempt == 4:
+                raise
+            print(f"GitHub requested a rate-limit pause of {delay} seconds; the verified catalog checkpoint is retained.", flush=True)
+            while delay:
+                interval = min(delay, 60)
+                time.sleep(interval)
+                delay -= interval
 
 
 def mirror(record, repository, working, dry_run, releases=None):
@@ -205,6 +246,8 @@ def mirror(record, repository, working, dry_run, releases=None):
     existing = releases.get(tag)
     payload_path = working / "release-payload.json"
     if existing is not None:
+        if existing.get("draft") and any(a["name"] != record["file"] for a in existing.get("assets", [])):
+            raise ValueError("Draft has unexpected assets; refusing to publish them")
         assets = [a for a in existing.get("assets", []) if a["name"] == record["file"]]
         if assets:
             asset = assets[0]
@@ -212,6 +255,7 @@ def mirror(record, repository, working, dry_run, releases=None):
                 raise ValueError("Existing GitHub asset identity differs; refusing replacement")
             if existing.get("draft"):
                 existing = mutate_json("repos/" + repository + "/releases/" + str(existing["id"]), "PATCH", payload_path, {"draft": False, "make_latest": latest})
+            releases[tag] = existing
             return {"file": record["file"], "sha256": record["sha256"], "bytes": record["bytes"], "uploaded": True, "reused": True, "release": existing["html_url"], "download_url": asset["browser_download_url"]}
     download(record, local)
     if program:
@@ -231,6 +275,7 @@ def mirror(record, repository, working, dry_run, releases=None):
     if asset["size"] != record["bytes"] or asset.get("digest") != "sha256:" + record["sha256"]:
         raise ValueError("GitHub uploaded asset failed identity verification")
     published = mutate_json("repos/" + repository + "/releases/" + str(release_id), "PATCH", payload_path, {"draft": False, "make_latest": latest})
+    releases[tag] = published
     local.unlink()
     return {"file": record["file"], "sha256": record["sha256"], "bytes": record["bytes"], "uploaded": True, "release": published["html_url"], "download_url": asset["browser_download_url"]}
 
@@ -248,13 +293,23 @@ def main():
     games = catalog_records(catalog)
     programs = program_records(catalog)
     records = programs + games
+    tags = [(r["product"] + "-v" + r["version"]) if r.get("product") else "game-" + r["sha256"][:24] for r in records]
+    if len(tags) != len(set(tags)):
+        raise ValueError("Catalog has duplicate release tags")
     results = []
     releases = {} if arguments.verify_downloads_only else release_index(arguments.repo)
+    def save_report(status, error=None):
+        arguments.report.write_text(json.dumps({"repository": arguments.repo, "status": status, "expected_games": len(games), "expected_programs": len(programs), "verified_assets": len(results), "complete": len(results) == len(records), "error": error, "results": results}, indent=2) + "\n", encoding="utf-8")
+    save_report("in_progress")
     with tempfile.TemporaryDirectory(prefix="ps1-game-mirror-") as temporary:
         for index, record in enumerate(records):
-            result = mirror(record, arguments.repo, Path(temporary), arguments.verify_downloads_only, releases)
+            try:
+                result = mirror(record, arguments.repo, Path(temporary), arguments.verify_downloads_only, releases)
+            except Exception as error:
+                save_report("failed", {"file": record["file"], "type": type(error).__name__, "detail": str(error)})
+                raise
             results.append(result)
-            arguments.report.write_text(json.dumps({"repository": arguments.repo, "expected_games": len(games), "expected_programs": len(programs), "verified_assets": len(results), "complete": len(results) == len(records), "results": results}, indent=2) + "\n", encoding="utf-8")
+            save_report("passed" if len(results) == len(records) else "in_progress")
             print(f"{index + 1}/{len(records)} {record['file']}", flush=True)
 
 

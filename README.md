@@ -10,6 +10,6 @@ The package includes the public Studio and Player source, bundled tools, license
 
 ## PS1 game players
 
-The [game catalog](games/README.md) lists the 164 reviewed game projects from the website. GitHub release downloads appear as verified mirroring completes; the initial mirror is currently in progress. Every refreshed game ZIP includes `Start-Update.cmd` for fixes matched to its exact disc revision. Game project releases are separate from the public Studio/Player ZIP; users still supply their original disc and supported BIOS. Game inclusion does not guarantee gameplay compatibility.
+The [game catalog](games/README.md) lists the 164 reviewed game projects from the website. All 164 game ZIPs have been mirrored to GitHub Releases. Each published asset size and GitHub SHA256 digest matches the reviewed website catalog; see the [verification report](games/verification.json). Every refreshed game ZIP includes `Start-Update.cmd` for fixes matched to its exact disc revision. Game project releases are separate from the public Studio/Player ZIP; users still supply their original disc and supported BIOS. Game inclusion does not guarantee gameplay compatibility.
 
 Online updates download and verify a release before installation. Installation-specific locks allow unrelated games and Studio installations to keep running. Saves, settings, disc/BIOS paths and mods are protected from update targets. Shared Player fixes and game-specific fixes use separate feeds; neither automatically proves compatibility.

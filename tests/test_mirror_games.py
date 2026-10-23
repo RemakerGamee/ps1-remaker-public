@@ -1,6 +1,7 @@
 import hashlib
 import importlib.util
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -210,6 +211,64 @@ class PublicationTests(unittest.TestCase):
         self.assertIn("uploads.github.com/repos/RemakerGamee/ps1-remaker-public/releases/27/assets?name=Game.zip", mutate.call_args_list[1].args[0])
         self.assertEqual(mutate.call_args_list[2].args[0], "repos/RemakerGamee/ps1-remaker-public/releases/27")
         self.assertTrue(result["uploaded"])
+
+    def test_draft_unexpected_asset_refused(self):
+        record = self.record()
+        tag = "game-" + "a" * 24
+        draft = {"id": 17, "draft": True, "assets": [{"name": "Unexpected.zip"}]}
+        with tempfile.TemporaryDirectory() as temporary, patch.object(M, "download") as download, patch.object(M, "mutate_json") as mutate:
+            with self.assertRaises(ValueError):
+                M.mirror(record, "RemakerGamee/ps1-remaker-public", Path(temporary), False, {tag: draft})
+        download.assert_not_called()
+        mutate.assert_not_called()
+
+
+class RateLimitTests(unittest.TestCase):
+    def error(self, headers="", body="secondary rate limit"):
+        return subprocess.CalledProcessError(1, ["gh", "api"], output="HTTP/2.0 403 Forbidden\r\n" + headers + "\r\n" + body, stderr="HTTP403")
+
+    def test_header_parse(self):
+        headers, body = M.response_parts('HTTP/2.0 201 Created\r\nContent-Type: application/json\r\n\r\n{"id":1}')
+        self.assertEqual(headers["content-type"], "application/json")
+        self.assertEqual(json.loads(body), {"id": 1})
+
+    def test_retry_after_honored(self):
+        error = self.error("Retry-After: 2\r\n")
+        self.assertEqual(M.rate_delay(error, 0), 2)
+        response = subprocess.CompletedProcess(["gh"], 0, stdout='HTTP/2.0 200 OK\r\n\r\n{"id":1}')
+        with patch.object(M, "LAST_MUTATION", 0.0), patch.object(M, "gh", side_effect=[error, response]) as gh, patch.object(M.time, "sleep") as sleep, patch.object(M.time, "monotonic", return_value=100):
+            result = M.mutate_json("repos/owner/repo/releases", "POST")
+        self.assertEqual(result, {"id": 1})
+        self.assertEqual(gh.call_count, 2)
+        sleep.assert_called_once_with(2)
+
+    def test_primary_reset_honored(self):
+        with patch.object(M.time, "time", return_value=100):
+            self.assertEqual(M.rate_delay(self.error("X-RateLimit-Remaining: 0\r\nX-RateLimit-Reset: 160\r\n", "API rate limit exceeded"), 0), 61)
+
+    def test_ambiguous_post_failure_not_retried(self):
+        error = self.error("", "upstream connection failed")
+        with patch.object(M, "LAST_MUTATION", 0.0), patch.object(M, "gh", side_effect=error) as gh, patch.object(M.time, "sleep"), patch.object(M.time, "monotonic", return_value=100):
+            with self.assertRaises(subprocess.CalledProcessError):
+                M.mutate_json("repos/owner/repo/releases", "POST")
+        gh.assert_called_once()
+
+    def test_wait_is_bounded(self):
+        self.assertIsNone(M.rate_delay(self.error("Retry-After: 3601\r\n"), 0))
+
+    def test_failed_report_keeps_checkpoint(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            catalog = root / "catalog.json"
+            report = root / "report.json"
+            catalog.write_text(json.dumps([PublicationTests().record()]))
+            with patch.object(sys, "argv", ["mirror", str(catalog), "--report", str(report)]), patch.object(M, "release_index", return_value={}), patch.object(M, "mirror", side_effect=RuntimeError("synthetic refusal")):
+                with self.assertRaises(RuntimeError):
+                    M.main()
+            data = json.loads(report.read_text())
+            self.assertEqual(data["status"], "failed")
+            self.assertEqual(data["verified_assets"], 0)
+            self.assertEqual(data["error"]["file"], "Game.zip")
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # PS1 game download catalog
 
-Catalog lists 164 reviewed website packages; GitHub release downloads appear as verified mirroring completes. The first mirror is currently in progress.
+All 164 game ZIPs are published in GitHub Releases. Every published asset size and GitHub SHA256 digest matches the reviewed website catalog. See [verification.json](verification.json) for the complete identity report.
 
 All 164 reviewed website game downloads include an online updater for their exact disc revision. Native executable bytes remain unchanged by this updater retrofit. Supply your own disc and supported BIOS; gameplay compatibility is not guaranteed.
 
