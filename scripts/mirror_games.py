@@ -27,9 +27,9 @@ def validate_zip(path, record=None, require_updater=True):
         names = set()
         expanded = 0
         for info in archive.infolist():
-            name = info.filename.rstrip("/")
+            name = info.orig_filename.rstrip("/")
             relative = PurePosixPath(name)
-            if not name or relative.is_absolute() or ".." in relative.parts or "\\" in name or ":" in name or str(relative) != name:
+            if info.filename != info.orig_filename or not name or relative.is_absolute() or ".." in relative.parts or "\\" in name or ":" in name or str(relative) != name:
                 raise ValueError("Unsafe ZIP member")
             if name.casefold() in {n.casefold() for n in names} or (info.external_attr >> 16) & 0o170000 == 0o120000:
                 raise ValueError("Duplicate ZIP member or symbolic link")
@@ -95,7 +95,7 @@ def program_records(catalog):
     records = catalog.get("programs", []) if isinstance(catalog, dict) else []
     result = []
     seen = set()
-    prefixes = {"ps1-remaker-public": "/downloads/programs/ps1/", "ps1-player-public": "/downloads/programs/ps1/player/"}
+    prefixes = {"ps1-remaker-public": "/downloads/programs/ps1/", "ps1-player-public": "/downloads/programs/ps1/player/", "ps1-remaker-builder-public": "/downloads/programs/ps1/remaker/"}
     for record in records:
         product = record.get("product")
         if product not in prefixes or product in seen or not record.get("url", "").startswith(prefixes[product]):
@@ -116,11 +116,14 @@ def validate_program_zip(path, record):
         files = [name for name in names if not name.endswith("/")]
         if len(names) != len(set(n.casefold() for n in names)):
             raise ValueError("Duplicate program ZIP member")
-        prefix = "PS1-Remaker-Public/" if record["product"] == "ps1-remaker-public" else "PS1-Player-Public/"
+        prefixes = {"ps1-remaker-public":"PS1-Remaker-Public/", "ps1-player-public":"PS1-Player-Public/", "ps1-remaker-builder-public":"PS1-Remaker-Only-Public/"}
+        if record["product"] not in prefixes:
+            raise ValueError("Unknown public program product")
+        prefix = prefixes[record["product"]]
         for info in archive.infolist():
-            name = info.filename.rstrip("/")
+            name = info.orig_filename.rstrip("/")
             relative = PurePosixPath(name)
-            if not info.filename.startswith(prefix) or relative.is_absolute() or ".." in relative.parts or "\\" in name or ":" in name or str(relative) != name or (info.external_attr >> 16) & 0o170000 == 0o120000:
+            if info.filename != info.orig_filename or not name.startswith(prefix) or relative.is_absolute() or ".." in relative.parts or "\\" in name or ":" in name or str(relative) != name or (info.external_attr >> 16) & 0o170000 == 0o120000:
                 raise ValueError("Unsafe program ZIP member")
             if relative.suffix.lower() in {".iso", ".chd", ".cue", ".img", ".mdf", ".ecm", ".mcd", ".mcr", ".vmp", ".sav", ".srm"} or re.fullmatch(r"scph[-_0-9a-z]*\.bin", relative.name, re.I):
                 raise ValueError("Program ZIP contains disc/BIOS/save filename")
@@ -131,6 +134,10 @@ def validate_program_zip(path, record):
         if manifest.get("schema") != 1 or manifest.get("product") != record["product"] or manifest.get("version") != record["version"]:
             raise ValueError("Program product/version mismatch")
         declared = manifest.get("files", {})
+        if record["product"] == "ps1-remaker-builder-public":
+            required = {"ps1_remaker.py","studio_ui.py","engines.py","app_update.py","Start-PS1-Remaker.cmd","history_store.py","player_template/player.py","player_template/player_core.py"}
+            if not required <= set(declared) or "Start-PS1-Player.cmd" in declared:
+                raise ValueError("Remaker-only package must retain build templates and omit the standalone Player launcher")
         if set(files) != {prefix + name for name in declared} | {manifest_name}:
             raise ValueError("Program manifest inventory mismatch")
         for name, digest in declared.items():

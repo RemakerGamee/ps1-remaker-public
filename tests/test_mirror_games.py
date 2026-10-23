@@ -70,7 +70,9 @@ class ZipTests(unittest.TestCase):
             members.pop(omit)
         with zipfile.ZipFile(self.path, "w") as archive:
             for name, value in members.items():
-                archive.writestr(name, value)
+                info = zipfile.ZipInfo(name)
+                info.filename = name  # Keep the deliberately unsafe raw spelling on Windows.
+                archive.writestr(info, value)
 
     def test_good(self):
         self.fixture()
@@ -270,6 +272,37 @@ class RateLimitTests(unittest.TestCase):
             self.assertEqual(data["verified_assets"], 0)
             self.assertEqual(data["error"]["file"], "Game.zip")
 
+
+
+class RemakerOnlyProgramTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup)
+        self.path=Path(self.tmp.name)/"Builder.zip"
+        self.record={"product":"ps1-remaker-builder-public","version":"0.21.2-public-beta","file":"Builder.zip","bytes":42,"sha256":"a"*64,"url":"/downloads/programs/ps1/remaker/Builder.zip"}
+    def archive(self,player=False,missing=False):
+        files={name:b"host fixture" for name in ("ps1_remaker.py","studio_ui.py","engines.py","app_update.py","Start-PS1-Remaker.cmd","history_store.py","player_template/player.py","player_template/player_core.py")}
+        if player:files["Start-PS1-Player.cmd"]=b"excluded launcher"
+        if missing:files.pop("player_template/player.py")
+        manifest={"schema":1,"product":self.record["product"],"version":self.record["version"],"files":{name:hashlib.sha256(data).hexdigest() for name,data in files.items()}}
+        with zipfile.ZipFile(self.path,"w") as archive:
+            for name,data in files.items():archive.writestr("PS1-Remaker-Only-Public/"+name,data)
+            archive.writestr("PS1-Remaker-Only-Public/UPDATE-MANIFEST.json",json.dumps(manifest))
+    def test_builder_has_distinct_product_path_and_valid_templates(self):
+        self.archive();M.validate_program_zip(self.path,self.record)
+        self.assertEqual(M.program_records({"programs":[self.record]}),[self.record])
+    def test_builder_refuses_standalone_player_launcher(self):
+        self.archive(player=True)
+        with self.assertRaises(ValueError):M.validate_program_zip(self.path,self.record)
+    def test_builder_requires_output_player_template(self):
+        self.archive(missing=True)
+        with self.assertRaises(ValueError):M.validate_program_zip(self.path,self.record)
+    def test_builder_does_not_accept_combined_feed_path(self):
+        with self.assertRaises(ValueError):M.program_records({"programs":[{**self.record,"url":"/downloads/programs/ps1/Builder.zip"}]})
+
+    def test_combined_product_rejects_nested_component_prefix(self):
+        for path in ("/downloads/programs/ps1/player/Builder.zip","/downloads/programs/ps1/remaker/Builder.zip"):
+            with self.subTest(path=path),self.assertRaises(ValueError):
+                M.program_records({"programs":[{**self.record,"product":"ps1-remaker-public","url":path}]})
 
 if __name__ == "__main__":
     unittest.main()

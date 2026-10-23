@@ -1,12 +1,20 @@
 # RetroRemakes PS1 Remaker
 
-Public beta **v0.21.1-public-beta** — Windows Studio and Player for experimental native PS1 projects.
+Public beta **v0.21.2-public-beta** — Windows applications for experimental native PS1 projects.
 
-Download the public ZIP from this repository's **Releases** section. Extract the entire archive; Python 3.11+ with Tcl/Tk is required. Start `Start-PS1-Remaker.cmd` for Studio or `Start-PS1-Player.cmd` for Player. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK.
+Choose the download you need:
 
-You must supply your own supported PS1 BIOS and game disc files. No BIOS or games are included. Building a game does not guarantee compatibility. Windows execution, physical controllers and commercial-game gameplay remain unverified for this public edition.
+| Download | Includes | Start here |
+| --- | --- | --- |
+| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.2-public-beta/PS1-Remaker-Public-v0.21.2-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
+| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.2-public-beta/PS1-Remaker-Only-Public-v0.21.2-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
+| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.2-public-beta/PS1-Player-Public-v0.21.2-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
 
-The package includes the public Studio and Player source, bundled tools, license terms, third-party notices, engine provenance and verification report. The bundled PSXRecomp engine uses the PolyForm Noncommercial license; see the complete terms inside the ZIP. This is a free noncommercial public beta.
+Extract the entire archive. Python 3.11+ with Tcl/Tk is required. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK. Each application edition uses its own update identity and approved feed.
+
+Supply your own supported PS1 BIOS and matching game disc files. No BIOS or games are included. Building a game does not guarantee compatibility. Windows commercial-game gameplay and physical-controller coverage remain experimental.
+
+The public ZIPs include source and preserved license notices. The bundled PSXRecomp engine uses the PolyForm Noncommercial license; see its complete terms inside the ZIP. This is a free noncommercial public beta.
 
 ## PS1 game players
 
@@ -31,4 +39,9 @@ Adds previewable diagnostic reports to PS1 Player and Remaker, including optiona
 ## Export errors and batch history
 
 Adds an All games error history with Copy all errors and Save all error reports in Remaker and Player. Batch failures are saved across games and restarts; an individual-game filter remains available. Exported reports include sanitized error messages and details, with optional bounded log excerpts. Reports exclude original discs, BIOS, saves and settings. Error-history storage and excerpts remain bounded; this does not collect unlimited game logs or memory dumps. Preserves save states, disc matching, private Player Updates, community submission review and build progress. The private update preserves the configured update feed; older installations without a configured feed can retain the manual ZIP update workflow.
+
+
+## European PAL support and separate downloads
+
+Clarifies and preserves European PAL PS1 disc support in Remaker. SLES and SCES disc identities use Europe metadata, and the game picker supports matching CUE/BIN and CHD discs without a USA-only title gate. Existing game-specific downloads still require the matching supported disc edition. Preserves Export Errors, saved all-game error history, save states, build progress, community submissions and private Player Updates. Existing update feeds and user data remain untouched. Synthetic PAL identity/selection checks do not establish full-game compatibility or a new remaster. Public downloads now provide separate Remaker-only, Player-only and combined packages, each following its own approved update feed.
 
