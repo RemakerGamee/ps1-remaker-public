@@ -1,6 +1,6 @@
 # RetroRemakes PS1 Remaker
 
-Public beta **v0.21.0-public-beta** — Windows Studio and Player for experimental native PS1 projects.
+Public beta **v0.21.1-public-beta** — Windows Studio and Player for experimental native PS1 projects.
 
 Download the public ZIP from this repository's **Releases** section. Extract the entire archive; Python 3.11+ with Tcl/Tk is required. Start `Start-PS1-Remaker.cmd` for Studio or `Start-PS1-Player.cmd` for Player. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK.
 
@@ -26,4 +26,9 @@ Disc matching correction for the published US Tomorrow Never Dies (SLUS-00975) a
 ## Community uploads, diagnostics and progress
 
 Adds previewable diagnostic reports to PS1 Player and Remaker, including optional sanitized log excerpts, offline report ZIP export, user-approved issue submission and optional support email. Adds build-stage progress reporting with exact counters when the tool provides them; other stages show activity without inventing a completion percentage. Adds community package submission for signed-in contributors, private validation/review and edition-specific website publication; submissions do not overwrite another contributor's version. Keeps public BIOS/disc requirements, private-player behavior, save states and existing disc matching. No BIOS, original discs, saves, user settings or native game builds are distributed in this application update. Commercial-game compatibility remains experimental.
+
+
+## Export errors and batch history
+
+Adds an All games error history with Copy all errors and Save all error reports in Remaker and Player. Batch failures are saved across games and restarts; an individual-game filter remains available. Exported reports include sanitized error messages and details, with optional bounded log excerpts. Reports exclude original discs, BIOS, saves and settings. Error-history storage and excerpts remain bounded; this does not collect unlimited game logs or memory dumps. Preserves save states, disc matching, private Player Updates, community submission review and build progress. The private update preserves the configured update feed; older installations without a configured feed can retain the manual ZIP update workflow.
 
