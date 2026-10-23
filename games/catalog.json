@@ -3121,34 +3121,34 @@
   ],
   "programs": [
     {
-      "file": "PS1-Remaker-Public-v0.21.3-public-beta.zip",
-      "version": "0.21.3-public-beta",
-      "bytes": 23364700,
-      "sha256": "e99dbb856a76d31af3613018cd7f3e283f04c32bc2e9a2aa3d0841d01e173f6d",
+      "file": "PS1-Remaker-Public-v0.21.4-public-beta.zip",
+      "version": "0.21.4-public-beta",
+      "bytes": 23423990,
+      "sha256": "b535cf041983e4b15008fc34e202710ca637a55b3608ae5fa1db4fd0118251b4",
       "product": "ps1-remaker-public",
-      "url": "/downloads/programs/ps1/PS1-Remaker-Public-v0.21.3-public-beta.zip",
+      "url": "/downloads/programs/ps1/PS1-Remaker-Public-v0.21.4-public-beta.zip",
       "title": "PS1 Remaker & Player",
-      "download_url": "https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.3-public-beta/PS1-Remaker-Public-v0.21.3-public-beta.zip"
+      "download_url": "https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.4-public-beta/PS1-Remaker-Public-v0.21.4-public-beta.zip"
     },
     {
-      "file": "PS1-Remaker-Only-Public-v0.21.3-public-beta.zip",
-      "version": "0.21.3-public-beta",
-      "bytes": 23388420,
-      "sha256": "2f3400dafa827f7afffe8be373fb9ddf60f5ab6d3f8a7d5279dff47d2962af5e",
+      "file": "PS1-Remaker-Only-Public-v0.21.4-public-beta.zip",
+      "version": "0.21.4-public-beta",
+      "bytes": 23447704,
+      "sha256": "cd940c58da4af2fc4667e90c08b8a12bbce30745dcc94a5656f868b0d581728b",
       "product": "ps1-remaker-builder-public",
-      "url": "/downloads/programs/ps1/remaker/PS1-Remaker-Only-Public-v0.21.3-public-beta.zip",
+      "url": "/downloads/programs/ps1/remaker/PS1-Remaker-Only-Public-v0.21.4-public-beta.zip",
       "title": "PS1 Remaker only",
-      "download_url": "https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.3-public-beta/PS1-Remaker-Only-Public-v0.21.3-public-beta.zip"
+      "download_url": "https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.4-public-beta/PS1-Remaker-Only-Public-v0.21.4-public-beta.zip"
     },
     {
-      "file": "PS1-Player-Public-v0.21.3-public-beta.zip",
-      "version": "0.21.3-public-beta",
-      "bytes": 108448,
-      "sha256": "025612d7636dda0b1fabcd676d89a37c2ff0248fc2cf0fd5f61e0838e1e2dd83",
+      "file": "PS1-Player-Public-v0.21.4-public-beta.zip",
+      "version": "0.21.4-public-beta",
+      "bytes": 166886,
+      "sha256": "fa3422375434f9d604ad51b4c74679b343444f1e676a2bfd414ada8c9c7711e6",
       "product": "ps1-player-public",
-      "url": "/downloads/programs/ps1/player/PS1-Player-Public-v0.21.3-public-beta.zip",
+      "url": "/downloads/programs/ps1/player/PS1-Player-Public-v0.21.4-public-beta.zip",
       "title": "PS1 Player only",
-      "download_url": "https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.3-public-beta/PS1-Player-Public-v0.21.3-public-beta.zip"
+      "download_url": "https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.4-public-beta/PS1-Player-Public-v0.21.4-public-beta.zip"
     }
   ]
 }
