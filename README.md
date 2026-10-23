@@ -1,14 +1,14 @@
 # RetroRemakes PS1 Remaker
 
-Public beta **v0.21.4-public-beta** — Windows applications for experimental native PS1 projects.
+Public beta **v0.21.5-public-beta** — Windows applications for experimental native PS1 projects.
 
 Choose the download you need:
 
 | Download | Includes | Start here |
 | --- | --- | --- |
-| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.4-public-beta/PS1-Remaker-Public-v0.21.4-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
-| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.4-public-beta/PS1-Remaker-Only-Public-v0.21.4-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
-| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.4-public-beta/PS1-Player-Public-v0.21.4-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
+| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.5-public-beta/PS1-Remaker-Public-v0.21.5-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
+| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.5-public-beta/PS1-Remaker-Only-Public-v0.21.5-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
+| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.5-public-beta/PS1-Player-Public-v0.21.5-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
 
 Extract the entire archive. Python 3.11+ with Tcl/Tk is required. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK. Each application edition uses its own update identity and approved feed.
 
@@ -54,4 +54,9 @@ Adds a per-game Color mode choice in Renderer settings: Original (default) or Tr
 ## Verified disc container matching
 
 Improves matching of supported PS1 discs across verified CUE/BIN and CHD container layouts, using exact extracted boot-code fingerprints bound to the published native build. Different executable revisions remain rejected until rebuilt and reviewed. Verified container-layout profiles cover 132 of 164 published game identities with 369 executable fingerprints; the remaining 32 keep exact-disc matching only. The third-party reported disc has not been directly tested. Existing disc images, BIOS, game code, game configuration, saves and settings are preserved. This is an online application/player wrapper update; no full game archive or native executable is replaced. Keeps True Color, PAL support, save states, error export, community review and the three separate public program choices.
+
+
+## Public Remaker CHD support
+
+The public Remaker now includes its licensed Windows x64 CHD decoder, so a fresh complete Remaker ZIP can inspect supported owner-selected CHD discs without an external decoder path or private installation. Both Remaker downloads include the required decoder and license notices. The separate Player component retains its existing approved wrapper-only inventory. Private Remaker 0.20.6 also fixes loading its trusted player-template identity helper on a clean installation. This update also preserves verified container matching for 132 of 164 published game identities; 32 still require an exact disc match. Different game-code revisions remain refused until rebuilt/reviewed. No BIOS, disc images, game assets or native game executables are included or changed. Existing saves, settings and custom update feeds are preserved. The third-party reported disc remains untested.
 
