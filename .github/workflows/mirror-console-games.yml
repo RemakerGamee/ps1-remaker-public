@@ -1,0 +1,35 @@
+name: Mirror reviewed public console games
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - consoles/catalog.json
+      - scripts/mirror_console_games.py
+      - tests/test_mirror_console_games.py
+      - .github/workflows/mirror-console-games.yml
+permissions:
+  contents: write
+concurrency:
+  group: console-game-release-mirror
+  cancel-in-progress: false
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Validate bounded public game catalog
+        run: python3 -m unittest discover -s tests -p test_mirror_console_games.py
+      - name: Mirror exact existing game packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: python3 scripts/mirror_console_games.py consoles/catalog.json --repo "$GH_REPO" --report console-game-mirror-report.json
+      - name: Retain checksum verification report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: console-game-mirror-report
+          path: console-game-mirror-report.json
+          if-no-files-found: ignore
