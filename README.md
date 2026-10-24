@@ -1,14 +1,14 @@
 # RetroRemakes PS1 Remaker
 
-Public beta **v0.21.8-public-beta** — Windows applications for experimental native PS1 projects.
+Public beta **v0.21.9-public-beta** — Windows applications for experimental native PS1 projects.
 
 Choose the download you need:
 
 | Download | Includes | Start here |
 | --- | --- | --- |
-| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.8-public-beta/PS1-Remaker-Public-v0.21.8-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
-| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.8-public-beta/PS1-Remaker-Only-Public-v0.21.8-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
-| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.8-public-beta/PS1-Player-Public-v0.21.8-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
+| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.9-public-beta/PS1-Remaker-Public-v0.21.9-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
+| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.9-public-beta/PS1-Remaker-Only-Public-v0.21.9-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
+| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.9-public-beta/PS1-Player-Public-v0.21.9-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
 
 Extract the entire archive. Python 3.11+ with Tcl/Tk is required. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK. Each application edition uses its own update identity and approved feed.
 
