@@ -1,14 +1,14 @@
 # RetroRemakes PS1 Remaker
 
-Public beta **v0.21.10-public-beta** — Windows applications for experimental native PS1 projects.
+Public beta **v0.21.11-public-beta** — Windows applications for experimental native PS1 projects.
 
 Choose the download you need:
 
 | Download | Includes | Start here |
 | --- | --- | --- |
-| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.10-public-beta/PS1-Remaker-Public-v0.21.10-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
-| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.10-public-beta/PS1-Remaker-Only-Public-v0.21.10-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
-| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.10-public-beta/PS1-Player-Public-v0.21.10-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
+| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.11-public-beta/PS1-Remaker-Public-v0.21.11-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
+| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.11-public-beta/PS1-Remaker-Only-Public-v0.21.11-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
+| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.11-public-beta/PS1-Player-Public-v0.21.11-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
 
 Extract the entire archive. Python 3.11+ with Tcl/Tk is required. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK. Each application edition uses its own update identity and approved feed.
 
@@ -79,4 +79,9 @@ Adds a saved Display dithering control in the shared Remaker and Player Display 
 ## Experimental Akuji scene controls
 
 Adds shared Gameplay scene controls to both Players, with Original defaults and exact native/profile verification. Experimental Akuji (USA, SLUS-00715) support provides a detached right-stick free camera, extended world draw distance and enhanced adaptive geometry subdivision. Other games retain their original behavior. This is adaptive geometry detail, not new authored models or universal LOD. Pause, unsupported scenes and successful state restores reset scene enhancements. New scene-native user and internal states are profile-bound and safely refused by older runtimes; legacy saves remain readable. The verified native game update is distributed separately. Application packages contain no game native, generated retail shards, BIOS, discs or player data. Existing batch completed-build checks, queue cleanup, error export, CHD, multidisc, display and updater behavior are retained. Validation covers the tested Akuji mission, near clipping, shared controls and isolated public/private launches. Full-campaign and physical-controller validation are not claimed; warm ABI1 BIOS-preparation fixture limitations remain.
+
+
+## Image framing and supported scene controls
+
+Adds optional displayed-image pan and zoom with supported updated native runtimes, preserving the full game image including HUD. This is image framing, not a world camera. Existing exact-title Akuji scene controls remain title-scoped; unsupported games retain Original. Private Player can remember a selected built-output library folder and refresh its game list. Preserves existing completed-build checks, queue cleanup, optional disc IDs, CHD, saves, diagnostics, updates and display settings. New native game updates are distributed separately. Application archives contain no game natives, discs, BIOS or player data.
 
