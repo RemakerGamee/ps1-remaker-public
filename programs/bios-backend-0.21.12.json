@@ -1,0 +1,78 @@
+{
+  "full": {
+    "file": "PS1-Remaker-Public-v0.21.12-public-beta.zip",
+    "version": "0.21.12-public-beta",
+    "bytes": 24145364,
+    "sha256": "3a3c80f918c81bd96b8d33d98c9cefc7fbf2cf5ea9d8e469857d9a34d1775ca4",
+    "parts": [
+      {
+        "number": 1,
+        "bytes": 8388608,
+        "sha256": "c2433161193325e96baabefab4f1e29ec5925561d93ac03eae3189022df858af"
+      },
+      {
+        "number": 2,
+        "bytes": 8388608,
+        "sha256": "4e1537a05633e1f2d616b2b85734bd8028ab4055f16d9f35d154cc5df40d5757"
+      },
+      {
+        "number": 3,
+        "bytes": 7368148,
+        "sha256": "14abe3b839b52c3fc5f305d915cca15b05ab4c50b89d1c1ba5b1d57b88c5f57c"
+      }
+    ],
+    "ready": true,
+    "url": "/downloads/programs/ps1/PS1-Remaker-Public-v0.21.12-public-beta.zip",
+    "product": "ps1-remaker-public",
+    "manifest_files": 2422
+  },
+  "remaker_only": {
+    "file": "PS1-Remaker-Only-Public-v0.21.12-public-beta.zip",
+    "version": "0.21.12-public-beta",
+    "bytes": 24169258,
+    "sha256": "1f24d05d02e7865de04516a4f76ffeb4edfa480aae6ff39ac5055b8aa4a8059c",
+    "parts": [
+      {
+        "number": 1,
+        "bytes": 8388608,
+        "sha256": "0fd6ec1d72fecf2ef2079ea19b72ea3839bc51308e4eb9fa382fba54fb10e654"
+      },
+      {
+        "number": 2,
+        "bytes": 8388608,
+        "sha256": "bc4f41a03e4a8d245d454fbfc5fefd48a27831afa186ee71e59626777d0fee74"
+      },
+      {
+        "number": 3,
+        "bytes": 7392042,
+        "sha256": "2ed939f2a6cb067c05aaf6ece38098f466f7952931d10534af3d65879190042a"
+      }
+    ],
+    "ready": true,
+    "url": "/downloads/programs/ps1/remaker/PS1-Remaker-Only-Public-v0.21.12-public-beta.zip",
+    "product": "ps1-remaker-builder-public",
+    "manifest_files": 2421,
+    "title": "PS1 Remaker only",
+    "bios_required": true,
+    "bios_included": false,
+    "windows_tested": false,
+    "tests_passed": 89
+  },
+  "player": {
+    "file": "PS1-Player-Public-v0.21.12-public-beta.zip",
+    "version": "0.21.12-public-beta",
+    "bytes": 436037,
+    "sha256": "9504a90ab02c08740fe5ade3588ff549b148fc751f79bca63889a716f9fe6cb4",
+    "parts": [
+      {
+        "number": 1,
+        "bytes": 436037,
+        "sha256": "9504a90ab02c08740fe5ade3588ff549b148fc751f79bca63889a716f9fe6cb4"
+      }
+    ],
+    "ready": true,
+    "url": "/downloads/programs/ps1/player/PS1-Player-Public-v0.21.12-public-beta.zip",
+    "product": "ps1-player-public",
+    "manifest_files": 30
+  }
+}

@@ -1,14 +1,14 @@
 # RetroRemakes PS1 Remaker
 
-Public beta **v0.21.11-public-beta** — Windows applications for experimental native PS1 projects.
+Public beta **v0.21.12-public-beta** — Windows applications for experimental native PS1 projects.
 
 Choose the download you need:
 
 | Download | Includes | Start here |
 | --- | --- | --- |
-| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.11-public-beta/PS1-Remaker-Public-v0.21.11-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
-| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.11-public-beta/PS1-Remaker-Only-Public-v0.21.11-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
-| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.11-public-beta/PS1-Player-Public-v0.21.11-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
+| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.12-public-beta/PS1-Remaker-Public-v0.21.12-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
+| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.12-public-beta/PS1-Remaker-Only-Public-v0.21.12-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
+| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.12-public-beta/PS1-Player-Public-v0.21.12-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
 
 Extract the entire archive. Python 3.11+ with Tcl/Tk is required. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK. Each application edition uses its own update identity and approved feed.
 
@@ -84,4 +84,13 @@ Adds shared Gameplay scene controls to both Players, with Original defaults and 
 ## Image framing and supported scene controls
 
 Adds optional displayed-image pan and zoom with supported updated native runtimes, preserving the full game image including HUD. This is image framing, not a world camera. Existing exact-title Akuji scene controls remain title-scoped; unsupported games retain Original. Private Player can remember a selected built-output library folder and refresh its game list. Preserves existing completed-build checks, queue cleanup, optional disc IDs, CHD, saves, diagnostics, updates and display settings. New native game updates are distributed separately. Application archives contain no game natives, discs, BIOS or player data.
+
+
+## BIOS backend startup repair
+
+Fixes automatic BIOS backend preparation for the verified legacy Disruptor USA and Europe builds. The Player repairs the recognized preparation script before starting the game; it preserves firmware checks, matching game-media checks, saves and settings. Reserved virtual-function mods fail explicitly on these legacy runtimes and require a compatible game-runtime update.
+
+Unfinished output folders no longer appear as library-import failures. Saved build errors remain available. Public users still supply their own supported BIOS and matching game files. No BIOS, discs, game executables, generated firmware modules or private reports are included.
+
+The exact failing builds passed automatic cold preparation and native startup checks. Full campaign and physical-controller coverage remain experimental. This release does not expand 3D camera, draw-distance or geometry support to additional games.
 
