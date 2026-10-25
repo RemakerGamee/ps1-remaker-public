@@ -1,14 +1,14 @@
 # RetroRemakes PS1 Remaker
 
-Public beta **v0.21.12-public-beta** — Windows applications for experimental native PS1 projects.
+Public beta **v0.21.14-public-beta** — Windows applications for experimental native PS1 projects.
 
 Choose the download you need:
 
 | Download | Includes | Start here |
 | --- | --- | --- |
-| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.12-public-beta/PS1-Remaker-Public-v0.21.12-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
-| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.12-public-beta/PS1-Remaker-Only-Public-v0.21.12-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
-| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.12-public-beta/PS1-Player-Public-v0.21.12-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
+| [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.14-public-beta/PS1-Remaker-Public-v0.21.14-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
+| [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.14-public-beta/PS1-Remaker-Only-Public-v0.21.14-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
+| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.14-public-beta/PS1-Player-Public-v0.21.14-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
 
 Extract the entire archive. Python 3.11+ with Tcl/Tk is required. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK. Each application edition uses its own update identity and approved feed.
 
@@ -93,4 +93,15 @@ Fixes automatic BIOS backend preparation for the verified legacy Disruptor USA a
 Unfinished output folders no longer appear as library-import failures. Saved build errors remain available. Public users still supply their own supported BIOS and matching game files. No BIOS, discs, game executables, generated firmware modules or private reports are included.
 
 The exact failing builds passed automatic cold preparation and native startup checks. Full campaign and physical-controller coverage remain experimental. This release does not expand 3D camera, draw-distance or geometry support to additional games.
+
+
+## BIOS preparation memory fix
+
+# PS1 Player and Remaker — BIOS preparation fix
+
+Repairs BIOS preparation failures in verified compatible legacy toolkits, including the tested Persona, Persona 2: Eternal Punishment and Ford Racing builds. The repair uses the bundled low-memory compiler, strict dispatcher compatibility, and exact firmware, ABI and codegen identity checks.
+
+The private Player keeps automatic local BIOS and game-media resolution. Public editions continue to require the player's own supported BIOS and matching game files. Unknown toolkits and existing ABI2 behavior remain unchanged. Legacy virtual guest-function mods still require a compatible runtime.
+
+Saves, settings, recorded build errors and existing scene-control availability are preserved. This release adds no new camera, draw-distance or geometry game coverage. No retail BIOS, original discs, generated BIOS modules, game executables, saves or private reports are distributed in these application updates.
 
