@@ -32,6 +32,8 @@ Experimental Fable III Windows 10/11 x64 installer. Retains the exact opening-Ca
 SHA256: `0b834a4d1788669b2e4c05aa7dda0a6eba7c76d82d08637aad320f89f708c3ce`  
 Bytes: 34040832
 
-The GitHub mirror is verified separately before its download link is added here.
+[Download from GitHub](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/xbox360-fable3-wip-v0.1.1/fable-iii-c92e3527-setup-0-1-1.exe) · [GitHub release notes](https://github.com/RemakerGamee/ps1-remaker-public/releases/tag/xbox360-fable3-wip-v0.1.1)
+
+GitHub's published asset size and SHA-256 match the verified website installer. The release workflow passed all 11 catalog and integrity-guard tests.
 
 Package hashes verify file identity, not publisher signing or universal gameplay. Retain the original licenses and notices. Existing player data and personal game files are not part of these mirrors.
