@@ -1,4 +1,6 @@
 import copy,json,sys,unittest
+from unittest.mock import patch
+from types import SimpleNamespace
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import mirror_console_games as m
@@ -30,3 +32,13 @@ class CatalogTests(unittest.TestCase):
  def test_fable_identity_refused(self):
   self.data['records'][-1]['sha256']='0'*64
   with self.assertRaises(ValueError):m.records(self.data)
+
+
+ def test_unrelated_duplicate_release_ignored(self):
+  releases=[{'tag_name':'unrelated','id':1},{'tag_name':'unrelated','id':2},{'tag_name':'approved','id':3}]
+  with patch.object(m,'gh',return_value=SimpleNamespace(stdout=json.dumps(releases))):
+   self.assertEqual(m.release_index('repo',{'approved'}),{'approved':releases[2]})
+ def test_approved_duplicate_release_refused(self):
+  releases=[{'tag_name':'approved','id':1},{'tag_name':'approved','id':2}]
+  with patch.object(m,'gh',return_value=SimpleNamespace(stdout=json.dumps(releases))):
+   with self.assertRaises(ValueError):m.release_index('repo',{'approved'})

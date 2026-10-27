@@ -1,7 +1,7 @@
 """Mirror only the checksum-pinned public console game packages; never execute them."""
 import argparse,hashlib,json,re,tempfile,urllib.parse,urllib.request,zipfile
 from pathlib import Path,PurePosixPath
-from mirror_games import release_index,mutate_json
+from mirror_games import gh,mutate_json
 ORIGIN='https://retroremakes.retroremakes.chatgpt.site'
 EXPECTED={
 'fable-iii-c92e3527-setup-0-1-1.exe':('xbox-360',34040832,'0b834a4d1788669b2e4c05aa7dda0a6eba7c76d82d08637aad320f89f708c3ce'),
@@ -9,6 +9,18 @@ EXPECTED={
 'Gears2-Mods-Companion-v0.1.0.zip':('xbox-360',13484,'473b9d58fc313018f9891752120065949ad5a2c13e964ff7376a3ec110d3c0e0'),
 'RetroRemakes-Rush2049-Mods-v0.3.4-Update.exe':('n64',6550528,'8b35bb62c9b5660afd106cc66f32cc1ea00d3925d913e7f893420799a2ac9295'),
 'Rush2049-Launcher-Mods-v0.3.4-Source.zip':('n64',166418,'43132db1ef4e1f97a4b23cc295b28e99eb68bb490434308df6d2428dc09760f1')}
+def release_index(repository,tags):
+ result={}
+ for page in range(1,101):
+  releases=json.loads(gh('api','repos/'+repository+'/releases?per_page=100&page='+str(page),capture=True).stdout)
+  for release in releases:
+   tag=release['tag_name']
+   if tag not in tags:continue
+   if tag in result:raise ValueError('Duplicate approved console release tag; refusing ambiguous upload')
+   result[tag]=release
+  if len(releases)<100:return result
+ raise ValueError('GitHub release listing bound exceeded')
+
 def records(data):
  rows=data['records'];seen=set()
  for r in rows:
@@ -49,7 +61,7 @@ def download(r,path):
 def main():
  p=argparse.ArgumentParser();p.add_argument('catalog',type=Path);p.add_argument('--repo',required=True);p.add_argument('--report',type=Path,required=True);a=p.parse_args()
  if a.repo!='RemakerGamee/ps1-remaker-public':raise ValueError('Unexpected repository')
- rows=records(json.loads(a.catalog.read_text()));releases=release_index(a.repo);results=[]
+ rows=records(json.loads(a.catalog.read_text()));releases=release_index(a.repo,{r['tag'] for r in rows});results=[]
  def save(status):a.report.write_text(json.dumps({'status':status,'expected_assets':len(rows),'verified_assets':len(results),'complete':len(results)==len(rows),'results':results},indent=2)+'\n')
  save('in_progress')
  with tempfile.TemporaryDirectory(prefix='console-games-') as temp:
@@ -74,3 +86,4 @@ def main():
    results.append(dict(file=r['file'],console=r['console'],bytes=r['bytes'],sha256=r['sha256'],github_digest=asset['digest'],download_url=asset['browser_download_url'],release_url=release['html_url'],reused=reused))
    save('passed' if len(results)==len(rows) else 'in_progress');print('Verified',r['file'],flush=True)
 if __name__=='__main__':main()
+
