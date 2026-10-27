@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "scope": "Existing public game downloads only; excludes generic players, Studio, private references and WIP artifacts.",
+  "scope": "Exact checksum-pinned existing public downloads, including the explicitly reviewed Fable III WIP installer; excludes generic Player/Studio programs and unapproved private artifacts.",
   "records": [
     {
       "file": "Gears2-OwnCopy-Setup-0.1.0-rc2.exe",
-      "title": "Gears of War 2 PC \u2014 own-copy setup",
+      "title": "Gears of War 2 PC — own-copy setup",
       "serial": "4D53082D-63AF211E",
       "platform": "Xbox360",
       "version": "0.1.0-rc2",
@@ -52,6 +52,23 @@
       "sha256": "43132db1ef4e1f97a4b23cc295b28e99eb68bb490434308df6d2428dc09760f1",
       "url": "/assets/game-mods/Rush2049-Launcher-Mods-v0.3.4-Source.zip",
       "notes": "Corresponding authored launcher update source and retained notices. No ROM or player data."
+    },
+    {
+      "console": "xbox-360",
+      "file": "fable-iii-c92e3527-setup-0-1-1.exe",
+      "title": "Fable III — castle-tested WIP installer 0.1.1",
+      "tag": "xbox360-fable3-wip-v0.1.1",
+      "version": "0.1.1",
+      "bytes": 34040832,
+      "sha256": "0b834a4d1788669b2e4c05aa7dda0a6eba7c76d82d08637aad320f89f708c3ce",
+      "url": "/downloads/xbox-360/wip/fable-iii-c92e3527-setup-0-1-1.exe",
+      "game_files_included": false,
+      "compiled_native_application_included": true,
+      "runtime_included": true,
+      "experimental": true,
+      "ready": true,
+      "artifact_sha256": "cfa2103b1b665f1e525191c2a7387a72bd9490fcefcd74e2d0ef9f0f712bffbd",
+      "notes": "Experimental Fable III Windows 10/11 x64 installer. Retains the exact opening-Castle-tested executable and matching runtime. Supply your own matching Xbox 360 ISO or extracted game files; original ISO/XEX, assets and saves are not included. The compiled native application and matching runtime are included. Walter training and the Castle exit remain unfinished; this is not a complete-game compatibility claim. Installer lifecycle checks do not establish new gameplay validation. Saves/settings remain separate from versioned application files. Runtime source and license materials: https://retroremakes.retroremakes.chatgpt.site/downloads/xbox-360/wip/runtime-source-v0-10-0-20261027.zip (SHA256 00885c9fb0ed9b44f736a6062ed082fc578f103b1849233c0325b9af7fb388b9)."
     }
   ]
 }

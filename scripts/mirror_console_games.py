@@ -4,6 +4,7 @@ from pathlib import Path,PurePosixPath
 from mirror_games import release_index,mutate_json
 ORIGIN='https://retroremakes.retroremakes.chatgpt.site'
 EXPECTED={
+'fable-iii-c92e3527-setup-0-1-1.exe':('xbox-360',34040832,'0b834a4d1788669b2e4c05aa7dda0a6eba7c76d82d08637aad320f89f708c3ce'),
 'Gears2-OwnCopy-Setup-0.1.0-rc2.exe':('xbox-360',226864500,'f35b2233fd2b20691206dbc2a92041280bc6b563dece27523e3ce881d6c8eba0'),
 'Gears2-Mods-Companion-v0.1.0.zip':('xbox-360',13484,'473b9d58fc313018f9891752120065949ad5a2c13e964ff7376a3ec110d3c0e0'),
 'RetroRemakes-Rush2049-Mods-v0.3.4-Update.exe':('n64',6550528,'8b35bb62c9b5660afd106cc66f32cc1ea00d3925d913e7f893420799a2ac9295'),
@@ -13,7 +14,7 @@ def records(data):
  for r in rows:
   file=r['file'];actual=(r['console'],r['bytes'],r['sha256'])
   if file not in EXPECTED or actual!=EXPECTED[file] or file in seen:raise ValueError('Not an exact approved public game download')
-  expected='/downloads/xbox-360/v0.1.0-rc2/'+file if file.startswith('Gears2-OwnCopy') else '/assets/game-mods/'+file
+  expected='/downloads/xbox-360/wip/'+file if file=='fable-iii-c92e3527-setup-0-1-1.exe' else ('/downloads/xbox-360/v0.1.0-rc2/'+file if file.startswith('Gears2-OwnCopy') else '/assets/game-mods/'+file)
   if r['url']!=expected or not re.fullmatch(r'[a-z0-9.-]+',r['tag']):raise ValueError('Unexpected path or release tag')
   seen.add(file)
  if seen!=set(EXPECTED):raise ValueError('Incomplete public game snapshot')

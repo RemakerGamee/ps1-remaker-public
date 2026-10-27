@@ -4,7 +4,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import mirror_console_games as m
 class CatalogTests(unittest.TestCase):
  def setUp(self):self.data=json.loads(Path('consoles/catalog.json').read_text())
- def test_exact_snapshot(self):self.assertEqual(len(m.records(self.data)),4)
+ def test_exact_snapshot(self):self.assertEqual(len(m.records(self.data)),5)
  def test_hash_change_refused(self):
   self.data['records'][0]['sha256']='0'*64
   with self.assertRaises(ValueError):m.records(self.data)
@@ -22,4 +22,11 @@ class CatalogTests(unittest.TestCase):
   with self.assertRaises(ValueError):m.records(self.data)
  def test_duplicate_tag_refused(self):
   self.data['records'][1]['tag']=self.data['records'][0]['tag']
+  with self.assertRaises(ValueError):m.records(self.data)
+
+ def test_unapproved_wip_refused(self):
+  self.data['records'][-1]['url']='/downloads/xbox-360/wip/unreviewed.exe'
+  with self.assertRaises(ValueError):m.records(self.data)
+ def test_fable_identity_refused(self):
+  self.data['records'][-1]['sha256']='0'*64
   with self.assertRaises(ValueError):m.records(self.data)
