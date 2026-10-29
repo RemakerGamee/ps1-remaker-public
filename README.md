@@ -1,8 +1,8 @@
 # RetroRemakes PS1 Remaker
 
-> **Current game status — October 28, 2026:** All 263 game/disc listings are [Work in progress](GAMES.md). The website currently withholds game packages; older GitHub game releases are historical. This status update does not publish private builds or reinstate withdrawn downloads.
+> **Current game status — October 29, 2026:** [206 PS1 individual experimental installers are live](games/README.md). The other 57 console listings remain **Work in progress**. Installers ask for your BIOS, CHD or CUE/BIN, install folder and save folder.
 
-Public beta **v0.21.14-public-beta** — Windows applications for experimental native PS1 projects.
+Public Player beta **v0.21.15-public-beta** is available. Remaker-only and combined application packages remain **v0.21.14-public-beta**. These Windows applications and game projects remain experimental.
 
 Choose the download you need:
 
@@ -10,9 +10,9 @@ Choose the download you need:
 | --- | --- | --- |
 | [Remaker & Player](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.14-public-beta/PS1-Remaker-Public-v0.21.14-public-beta.zip) | Both applications | `Start-PS1-Remaker.cmd` or `Start-PS1-Player.cmd` |
 | [Remaker only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.14-public-beta/PS1-Remaker-Only-Public-v0.21.14-public-beta.zip) | Remaker, with the player resources required by generated projects | `Start-PS1-Remaker.cmd` |
-| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-remaker-public-v0.21.14-public-beta/PS1-Player-Public-v0.21.14-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
+| [Player only](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/ps1-player-public-v0.21.15-public-beta/PS1-Player-Public-v0.21.15-public-beta.zip) | Player for an existing compatible game output | `Start-Player.cmd` |
 
-Extract the entire archive. Python 3.11+ with Tcl/Tk is required. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK. Each application edition uses its own update identity and approved feed.
+For standalone application ZIPs, extract the entire archive; Python 3.11+ with Tcl/Tk is required. The individual game installers provide their required Player runtime. Building projects also requires a compatible C++ toolchain, CMake and Windows SDK. Each application edition uses its own update identity and approved feed.
 
 Supply your own supported PS1 BIOS and matching game disc files. No BIOS or games are included. Building a game does not guarantee compatibility. Windows commercial-game gameplay and physical-controller coverage remain experimental.
 
@@ -20,9 +20,11 @@ The public ZIPs include source and preserved license notices. The bundled PSXRec
 
 ## PS1 game players
 
-The [current game catalog](GAMES.md) lists **206 PS1 game/disc projects**, all marked **Work in progress**. Public game downloads are currently unavailable while own-copy installers are rebuilt. The former 164-package mirror and its verification files are historical records, not a current availability claim.
+The [current PS1 catalog](games/README.md) lists **206 individual experimental installers**. Each requires your supported BIOS and matching CHD or CUE/BIN, lets you choose installation and save folders, and includes the shared Player settings and controls. Your BIOS, discs and save data remain separate. Gameplay compatibility and game-specific scene features remain subject to actual runtime support.
 
-The catalog also covers **37 Xbox 360, 3 PS2, 12 PS3 and 5 N64** projects. Games without current downloads are clearly marked **Work in progress** in each console index.
+The public Player **0.21.15-public-beta** and **007: Tomorrow Never Dies game update 1.0.6** correct BIOS preparation for the reviewed 007 build contexts. Fresh 007 downloads include the corrected game package. Existing installations receive fixes through their matching online update. This does not claim that the tester’s exact files or every BIOS/game revision were tested.
+
+The catalog also covers **37 Xbox 360, 3 PS2, 12 PS3 and 5 N64** projects. These **57** entries remain **Work in progress** without current game downloads.
 
 ## Save states
 
