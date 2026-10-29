@@ -1,172 +1,220 @@
-# PS1 game download catalog
+# PlayStation 1 game projects
 
-All 164 game ZIPs are published in GitHub Releases. Every published asset size and GitHub SHA256 digest matches the reviewed website catalog. See [verification.json](verification.json) for the complete identity report.
+Updated October 28, 2026.
 
-All 164 reviewed website game downloads include an online updater for their exact disc revision. Native executable bytes remain unchanged by this updater retrofit. Supply your own disc and supported BIOS; gameplay compatibility is not guaranteed.
+**All 206 listed projects are Work in progress. No current public game download is available.**
 
-| Game | Serial | Region | GitHub download |
-| --- | --- | --- | --- |
-| 0 kara no Mahjong - Mahjong Youchien Tamago-gumi | SLPS-01311 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-9d8752e49404dc6b40b0e320/0-kara-no-Mahjong-Mahjong-Youchien-Tamago-gumi-SLPS-01311-Player-v0.1.9-test-online-updates.zip) |
-| 007 - The World Is Not Enough | SLUS-01272 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-27af437080fdc35600060534/007-The-World-Is-Not-Enough-SLUS-01272-Player-v0.1.9-test-online-updates.zip) |
-| 007 - Tomorrow Never Dies | SLUS-00975 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-aa972a436c1364871d77b246/007-Tomorrow-Never-Dies-SLUS-00975-Player-v0.1.9-test-online-updates.zip) |
-| 007 Racing | SLUS-01300 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-e0d775df3ebfee4a946d6a3e/007-Racing-SLUS-01300-Player-v0.1.9-test-online-updates.zip) |
-| 100% Star | SLES-03784 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-2647a507c3559fed5a21caaa/100-Star-SLES-03784-Player-v0.1.9-test-online-updates.zip) |
-| 101 Dalmatians II - Patch's London Adventure | SLUS-01574 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-117f79e5b129ef6813a151f5/101-Dalmatians-II-Patch-s-London-Adventure-SLUS-01574-Player-v0.1.9-test-online-updates.zip) |
-| 102 Dalmatians - Puppies to the Rescue | SLUS-01152 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-406cc322e3a8a0a78d8755fd/102-Dalmatians-Puppies-to-the-Rescue-SLUS-01152-Player-v0.1.9-test-online-updates.zip) |
-| 10th Anniversary Memorial Save Data | SLPM-80643 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-1e4cf6fd60cd11d14550370f/10th-Anniversary-Memorial-Save-Data-SLPM-80643-Player-v0.1.9-test-online-updates.zip) |
-| 19-ji 03-pun - Ueno-hatsu Yakou Ressha (Demo) | SLPM-80181 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-d8054ccd67cdc46278910a9c/19-ji-03-pun-Ueno-hatsu-Yakou-Ressha-SLPM-80181-Player-v0.1.9-test-online-updates.zip) |
-| 1Xtreme | SCUS-94503 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-f37f34fa8da9621a35bca862/1Xtreme-SCUS-94503-Player-v0.1.9-test-online-updates.zip) |
-| 2Xtreme | SCUS-94508 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-9e6839a90a4d3c190e2b000b/2Xtreme-SCUS-94508-Player-v0.1.9-test-online-updates.zip) |
-| 360 - Three Sixty | SLES-02089 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-be391bf9db79c6ca586cdc5d/360-Three-Sixty-SLES-02089-Player-v0.1.9-test-online-updates.zip) |
-| 3D Lemmings | SCUS-94601 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-1ecaa71de2e22eef080f710a/3D-Lemmings-SCUS-94601-Player-v0.1.9-test-online-updates.zip) |
-| 40 Winks - Conquer Your Dreams featuring Ruff Tumble | SLES-01937 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-f0416749a3ae9fd3546623bd/40-Winks-Conquer-Your-Dreams-featuring-Ruff-Tumble-SLES-01937-Player-v0.1.9-test-online-updates.zip) |
-| 4x4 World Trophy | SLES-02017 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-b3d2a4ddb5e08f8f1a5c8094/4x4-World-Trophy-SLES-02017-Player-v0.1.9-test-online-updates.zip) |
-| 5 Star Racing | SLES-04064 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-d33ddbb1a1b00ce729b0c2f1/5-Star-Racing-SLES-04064-Player-v0.1.9-test-online-updates.zip) |
-| 70's Robot Anime - Geppy-X - The Super Boosted Armor [Disc 3] | SLPS-01997 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-fbda54d92f6f3329a1636317/70-s-Robot-Anime-Geppy-X-The-Super-Boosted-Armor-Disc-3-SLPS-01997-Player-v0.1.9-test-online-updates.zip) |
-| 70s Robot Anime - Geppy-X - The Super Boosted Armor [Disc 1] | SLPS-01995 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-34a4e34e062c372f93550032/70s-Robot-Anime-Geppy-X-The-Super-Boosted-Armor-Disc-1-SLPS-01995-Player-v0.1.9-test-online-updates.zip) |
-| 70s Robot Anime - Geppy-X - The Super Boosted Armor [Disc 2] | SLPS-01996 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-a96d9bc5968087ecb7140137/70s-Robot-Anime-Geppy-X-The-Super-Boosted-Armor-Disc-2-SLPS-01996-Player-v0.1.9-test-online-updates.zip) |
-| 70s Robot Anime - Geppy-X - The Super Boosted Armor [Disc 4] | SLPS-01998 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-163c383946640e93983df47c/70s-Robot-Anime-Geppy-X-The-Super-Boosted-Armor-Disc-4-SLPS-01998-Player-v0.1.9-test-online-updates.zip) |
-| A Bug's Life | SLUS-01538 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-9d6eb2201586ecd76ddbdd6a/A-Bug-s-Life-SLUS-01538-Player-v0.1.9-test-online-updates.zip) |
-| A Ressha de Ikou 4 - Evolution Global | SLPS-00125 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-98c5ed51ab6f5371dedcae78/A-Ressha-de-Ikou-4-Evolution-Global-SLPS-00125-Player-v0.1.9-test-online-updates.zip) |
-| A Ressha de Ikou Z - Mezase! Tairiku Oudan | SLPS-02050 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-db84a763c302e17f8d296a39/A-Ressha-de-Ikou-Z-Mezase-Tairiku-Oudan-SLPS-02050-Player-v0.1.9-test-online-updates.zip) |
-| A.IV - Evolution Global | SCES-00290 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-b5062eb8f42cb33042674308/A-IV-Evolution-Global-SCES-00290-Player-v0.1.9-test-online-updates.zip) |
-| AbalaBurn | SLPS-01280 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-cf4a4cfa2d6c879278092277/AbalaBurn-SLPS-01280-Player-v0.1.9-test-online-updates.zip) |
-| Abe a GoGo | SLPM-80175 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-b0cd788b90fc66af9e8a465b/Abe-a-GoGo-SLPM-80175-Player-v0.1.9-test-online-updates.zip) |
-| Ace Combat 2 | SLUS-00404 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-10524b75492b809810f3692c/Ace-Combat-2-SLUS-00404-Player-v0.1.9-test-online-updates.zip) |
-| Ace Combat 3 - Electrosphere | SCES-02066 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-b11af0f0bfe65b19af80770f/Ace-Combat-3-Electrosphere-SCES-02066-Player-v0.1.9-test-online-updates.zip) |
-| Acid | SLPS-02119 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-e489d56eaabd2b8e32883357/Acid-SLPS-02119-Player-v0.1.9-test-online-updates.zip) |
-| Action Man - Operation Extreme | SLUS-00887 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-c1fd3a2887f9c7dd774bcab0/Action-Man-Operation-Extreme-SLUS-00887-Player-v0.1.9-test-online-updates.zip) |
-| Actua Soccer - Club Edition | SLES-00190 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-0f65a8a574bcc763e0c4de3b/Actua-Soccer-Club-Edition-SLES-00190-Player-v0.1.9-test-online-updates.zip) |
-| Actua Soccer 2 | SLES-00021 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-696faacdbf3feb561da03dfc/Actua-Soccer-2-SLES-00021-Player-v0.1.9-test-online-updates.zip) |
-| Advan Racing | SLPS-01689 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-9a041134dd17899d4d0b6db8/Advan-Racing-SLPS-01689-Player-v0.1.9-test-online-updates.zip) |
-| Advanced V.G. | SLPM-80017 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-f2292248b82e906498672ef3/Advanced-V-G-SLPM-80017-Player-v0.1.9-test-online-updates.zip) |
-| Adventure of Phix | SLUS-01523 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-c5f1b345862091be2cb90027/Adventure-of-Phix-SLUS-01523-Player-v0.1.9-test-online-updates.zip) |
-| Adventures of Lomax | SCUS-94906 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-2d043d87cf6a0797e78da3d2/Adventures-of-Lomax-SCUS-94906-Player-v0.1.9-test-online-updates.zip) |
-| AFL 99 | SLES-01875 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-0e091317ae8fbd4c9fc3b707/AFL-99-SLES-01875-Player-v0.1.9-test-online-updates.zip) |
-| Agent Armstrong | SLES-00474 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-964d56694dbdb3868904f531/Agent-Armstrong-SLES-00474-Player-v0.1.9-test-online-updates.zip) |
-| Agile Warrior F-111X | SLUS-00023 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-ff4d08f474668cf3df3891c4/Agile-Warrior-F-111X-SLUS-00023-Player-v0.1.9-test-online-updates.zip) |
-| AI Mahjong 2000 | SLPS-02411 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-ee239445c4d2c3ffcc9cc7cf/AI-Mahjong-2000-SLPS-02411-Player-v0.1.9-test-online-updates.zip) |
-| AI Mahjong Selection | SLPM-87117 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-9a5b79ead74861f706548ddd/AI-Mahjong-Selection-SLPM-87117-Player-v0.1.9-test-online-updates.zip) |
-| AI Shougi | SLPS-00109 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-dd74141afa347fdd6daf547a/AI-Shougi-SLPS-00109-Player-v0.1.9-test-online-updates.zip) |
-| AI Shougi 2 | SLPS-01159 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-50bedad9c99d67cd6ede3fd0/AI-Shougi-2-SLPS-01159-Player-v0.1.9-test-online-updates.zip) |
-| AI Shougi 2 Deluxe | SLPS-02285 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-75d6544c83cb41291720ae23/AI-Shougi-2-Deluxe-SLPS-02285-Player-v0.1.9-test-online-updates.zip) |
-| AI Shougi Selection | SLPM-87068 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-67c1ca361b3a678b3941ab5d/AI-Shougi-Selection-SLPM-87068-Player-v0.1.9-test-online-updates.zip) |
-| Air Combat | SLUS-00001 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-bf33863313c67d65dc7b7223/Air-Combat-SLUS-00001-Player-v0.1.9-test-online-updates.zip) |
-| Air Hockey | SLUS-01467 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-323c55dcb72dd60f43df5d61/Air-Hockey-SLUS-01467-Player-v0.1.9-test-online-updates.zip) |
-| Air Race | SLES-00762 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-45d4d832c3940614b83dd022/Air-Race-SLES-00762-Player-v0.1.9-test-online-updates.zip) |
-| Air Race Championship | SLPS-01879 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-b4b2258a3ea4d0fdcbd9634a/Air-Race-Championship-SLPS-01879-Player-v0.1.9-test-online-updates.zip) |
-| Akuji - The Heartless | SLUS-00715 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-27ad9b8d4dbea51af933ee36/Akuji-The-Heartless-SLUS-00715-Player-v0.1.9-test-online-updates.zip) |
-| Aladdin In Nasira's Revenge | SCUS-94569 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-98691ffd2ac9fc341b08e076/Aladdin-In-Nasira-s-Revenge-SCUS-94569-Player-v0.1.9-test-online-updates.zip) |
-| Alex Fergusons Player Manager 2001 | SLES-03150 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-7a2cc416ffbcba7a11f72c69/Alex-Fergusons-Player-Manager-2001-SLES-03150-Player-v0.1.9-test-online-updates.zip) |
-| Alex Fergusons Player Manager 2002 | SLES-03775 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-d7254c4af8ff9068110155d8/Alex-Fergusons-Player-Manager-2002-SLES-03775-Player-v0.1.9-test-online-updates.zip) |
-| Alexi Lalas International Soccer | SLUS-00872 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-c95e45b6b1df4ed9332ab634/Alexi-Lalas-International-Soccer-SLUS-00872-Player-v0.1.9-test-online-updates.zip) |
-| Alfred Chicken | SCES-03817 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-438d4227d4a9be42aefe9ec1/Alfred-Chicken-SCES-03817-Player-v0.1.9-test-online-updates.zip) |
-| Alien Resurrection | SLUS-00633 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-4c3eb031c1ae9634fa8de348/Alien-Resurrection-SLUS-00633-Player-v0.1.9-test-online-updates.zip) |
-| Alien Trilogy | SLUS-00007 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-6dea9fcf2e12ab5b6c0234c8/Alien-Trilogy-SLUS-00007-Player-v0.1.9-test-online-updates.zip) |
-| All-Star Mahjong - Karei naru Shoubushi kara no Chousen | SLPS-00993 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-a8ba40185245a7d54bfeefe1/All-Star-Mahjong-Karei-naru-Shoubushi-kara-no-Chousen-SLPS-00993-Player-v0.1.9-test-online-updates.zip) |
-| All-Star Racing | SLUS-01460 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-d75f1f73dba3818912fb51ba/All-Star-Racing-SLUS-01460-Player-v0.1.9-test-online-updates.zip) |
-| All-Star Slammin Dodgeball | SLUS-01431 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-9b09474a35464cad939b3063/All-Star-Slammin-Dodgeball-SLUS-01431-Player-v0.1.9-test-online-updates.zip) |
-| All-Star Tennis '99 | SLES-03963 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-54376e7675f823731ff8c68b/All-Star-Tennis-99-SLES-03963-Player-v0.1.9-test-online-updates.zip) |
-| All-Star Tennis 2000 | SLES-02764 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-5f5003cc82d38c81ae90b6c2/All-Star-Tennis-2000-SLES-02764-Player-v0.1.9-test-online-updates.zip) |
-| All-Star Watersports | SLES-04060 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-ede48c0e374b33ed49bb0653/All-Star-Watersports-SLES-04060-Player-v0.1.9-test-online-updates.zip) |
-| Allied General | SLUS-00303 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-89b63d9d64f4d3fe1d3e9bdd/Allied-General-SLUS-00303-Player-v0.1.9-test-online-updates.zip) |
-| Alone in the Dark - One Eyed Jack's Revenge | SLUS-00239 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-cd4b56403a3cb0bb9ea20771/Alone-in-the-Dark-One-Eyed-Jack-s-Revenge-SLUS-00239-Player-v0.1.9-test-online-updates.zip) |
-| Alone in the Dark - The New Nightmare [Disc 1] | SLUS-01201 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-d98b33270a020df1aaf406c4/Alone-in-the-Dark-The-New-Nightmare-Disc-1-SLUS-01201-Player-v0.1.9-test-online-updates.zip) |
-| Alone in the Dark - The New Nightmare [Disc 2] | SLUS-01377 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-77004848a6837f58534338a1/Alone-in-the-Dark-The-New-Nightmare-Disc-2-SLUS-01377-Player-v0.1.9-test-online-updates.zip) |
-| Alundra 1 | SLUS-00553 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-6b8974390b56bd7aff16f6a8/Alundra-1-SLUS-00553-Player-v0.1.9-test-online-updates.zip) |
-| Alundra 2 - A New Legend Begins | SLUS-01017 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-819c9b5886360792edc78f24/Alundra-2-A-New-Legend-Begins-SLUS-01017-Player-v0.1.8-mods-test-online-updates.zip) |
-| Amazing Virtual Sea Monkeys | SLUS-01475 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-79828ad550161bbb35cc625e/Amazing-Virtual-Sea-Monkeys-SLUS-01475-Player-v0.1.9-test-online-updates.zip) |
-| American Pool | SLUS-01488 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-19183a3018870a48f64aeb05/American-Pool-SLUS-01488-Player-v0.1.9-test-online-updates.zip) |
-| Animal Snap Rescue Them 2 by 2 | SLES-04036 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-e78094c1802502f7a8d033cc/Animal-Snap-Rescue-Them-2-by-2-SLES-04036-Player-v0.1.9-test-online-updates.zip) |
-| Animaniacs - Ten Pin Alley | SLUS-00784 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-0c05df33d829215428a53f85/Animaniacs-Ten-Pin-Alley-SLUS-00784-Player-v0.1.9-test-online-updates.zip) |
-| Anna Kournikovas Smash Court Tennis | SCES-01833 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-a2e9ab11f64def73490a0a1f/Anna-Kournikovas-Smash-Court-Tennis-SCES-01833-Player-v0.1.9-test-online-updates.zip) |
-| Ape Escape | SCUS-94423 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-7e545f887b1f9b366b7d0886/Ape-Escape-SCUS-94423-Player-v0.1.9-test-online-updates.zip) |
-| Apocalypse | SLUS-00373 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-e88027faf5bdf194751c8849/Apocalypse-SLUS-00373-Player-v0.1.9-test-online-updates.zip) |
-| Aqua GT | SLES-02930 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-2ee7a130a60a34b299e323e3/Aqua-GT-SLES-02930-Player-v0.1.9-test-online-updates.zip) |
-| Aquanaut's Holiday | SCUS-94603 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-15dcb757fc195fbdfd726df1/Aquanaut-s-Holiday-SCUS-94603-Player-v0.1.9-test-online-updates.zip) |
-| Armed Fighter | SLPS-01598 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-d3caa70a37ef1227e265538b/Armed-Fighter-SLPS-01598-Player-v0.1.9-test-online-updates.zip) |
-| Armored Core - Master of Arena | SLUS-01030 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-1812e0bfb36a19bd32ed3231/Armored-Core-Master-of-Arena-SLUS-01030-Player-v0.1.9-test-online-updates.zip) |
-| Armored Core Project Phantasma | SLUS-00670 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-7ade85b95ea2d1f277bf0116/Armored-Core-Project-Phantasma-SLUS-00670-Player-v0.1.9-test-online-updates.zip) |
-| Armorines - Project S.W.A.R.M | SLUS-01022 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-6cadd0877703e00289b64fee/Armorines-Project-S-W-A-R-M-SLUS-01022-Player-v0.1.9-test-online-updates.zip) |
-| Army Men - Air Attack | SLUS-00913 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-c46f491ce81da49b5e2beb17/Army-Men-Air-Attack-SLUS-00913-Player-v0.1.9-test-online-updates.zip) |
-| Army Men - Air Attack 2 | SLUS-01132 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-5ec138c12c3373fc7f1395a5/Army-Men-Air-Attack-2-SLUS-01132-Player-v0.1.9-test-online-updates.zip) |
-| Army Men - Green Rogue | SLUS-01330 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-95a28478324a6ab7c7e3ac21/Army-Men-Green-Rogue-SLUS-01330-Player-v0.1.9-test-online-updates.zip) |
-| Army Men - Sarge's Heroes | SLUS-00914 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-a1e348127e03acfc924d524c/Army-Men-Sarge-s-Heroes-SLUS-00914-Player-v0.1.9-test-online-updates.zip) |
-| Army Men - Sarge's Heroes 2 | SLES-03316 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-6c2535236d7e73e6dd155d12/Army-Men-Sarge-s-Heroes-2-SLES-03316-Player-v0.1.9-test-online-updates.zip) |
-| Army Men 3D | SLUS-00491 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-5813c12f0f5cee5af792cab1/Army-Men-3D-SLUS-00491-Player-v0.1.9-test-online-updates.zip) |
-| Army Men World War | SLUS-01079 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-4d7333bd677444d0fa9d1398/Army-Men-World-War-SLUS-01079-Player-v0.1.9-test-online-updates.zip) |
-| Army Men World War - Final Front | SLUS-01327 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-b595dddd72a4a100bb162374/Army-Men-World-War-Final-Front-SLUS-01327-Player-v0.1.9-test-online-updates.zip) |
-| Army Men World War - Team Assault | SLUS-01435 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-c729c99dfb83183271a345e7/Army-Men-World-War-Team-Assault-SLUS-01435-Player-v0.1.9-test-online-updates.zip) |
-| Art Truck Battle | SLPS-01441 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-e32b44b7eba7e1ac86e2799a/Art-Truck-Battle-SLPS-01441-Player-v0.1.9-test-online-updates.zip) |
-| Assault | SLES-01244 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-7050dafe9c4ad2dd442ec9e9/Assault-SLES-01244-Player-v0.1.9-test-online-updates.zip) |
-| Assault Retribution | SLUS-00713 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-b72b98322f30c0d37c5e0c0e/Assault-Retribution-SLUS-00713-Player-v0.1.9-test-online-updates.zip) |
-| Assault Rigs | SCUS-94405 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-db86408e8342883602337031/Assault-Rigs-SCUS-94405-Player-v0.1.9-test-online-updates.zip) |
-| Asterix Mega Madness | SLES-03324 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-46578a54f9fe5c075bd376aa/Asterix-Mega-Madness-SLES-03324-Player-v0.1.9-test-online-updates.zip) |
-| Asuka 120 - Burning Fest Final | SLPS-02074 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-8c710b2ee3dc4ddd9acc1a15/Asuka-120-Burning-Fest-Final-SLPS-02074-Player-v0.1.9-test-online-updates.zip) |
-| Atari - Anniversary Edition | SLUS-01427 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-8c2f275b0b1a3292fc6947ec/Atari-Anniversary-Edition-SLUS-01427-Player-v0.1.9-test-online-updates.zip) |
-| Atlantis - El Imperio Perdido | SCES-03541 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-d19e2f4bd011afce43b1cefe/Atlantis-El-Imperio-Perdido-SCES-03541-Player-v0.1.9-test-online-updates.zip) |
-| Attack of the Saucerman | SLUS-01718 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-1315b2e5889253e5e5b8e902/Attack-of-the-Saucerman-SLUS-01718-Player-v0.1.9-test-online-updates.zip) |
-| ATV Racers | SLES-04059 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-3439968bba73c2aebf95cf03/ATV-Racers-SLES-04059-Player-v0.1.9-test-online-updates.zip) |
-| Auto Destruct | SLUS-00522 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-f0229dee23664888ca8aad1a/Auto-Destruct-SLUS-00522-Player-v0.1.9-test-online-updates.zip) |
-| Autobahn Racer 2 | SLES-02341 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-79e04eedd29f3c3748cc5f7d/Autobahn-Racer-2-SLES-02341-Player-v0.1.9-test-online-updates.zip) |
-| Ayrton Senna - Kart Duel | SLES-00493 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-db038e0dafa106e5c9672041/Ayrton-Senna-Kart-Duel-SLES-00493-Player-v0.1.9-test-online-updates.zip) |
-| Azito 2 | SLPS-01526 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-52b475f815ba80877fbbed84/Azito-2-SLPS-01526-Player-v0.1.9-test-online-updates.zip) |
-| B-Movie | SLES-01550 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-1aa49afb5a71ddd4b3ae3d2d/B-Movie-SLES-01550-Player-v0.1.9-test-online-updates.zip) |
-| Baby Felix Tennis | SLES-03991 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-e5ac99e9f6c24a440642dc96/Baby-Felix-Tennis-SLES-03991-Player-v0.1.9-test-online-updates.zip) |
-| Bakumatsu Roman - Gekka no Kenshi [The Last Blade] | SLPM-86118 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-242ab98b214807613fba6cd4/Bakumatsu-Roman-Gekka-no-Kenshi-The-Last-Blade-SLPM-86118-Player-v0.1.9-test-online-updates.zip) |
-| Bakuryu | SLPS-02429 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-2815704fe0d9082cbd3aaa94/Bakuryu-SLPS-02429-Player-v0.1.9-test-online-updates.zip) |
-| Baldy Land | SLPS-01074 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-13e878a83924d0abcdb3a468/Baldy-Land-SLPS-01074-Player-v0.1.9-test-online-updates.zip) |
-| Ball Breakers | SLUS-01249 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-5d44e0174d65c53c78527038/Ball-Breakers-SLUS-01249-Player-v0.1.9-test-online-updates.zip) |
-| Ballerburg Castle Chaos | SLUS-01568 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-c0ca9ab0f0df1281db7ae768/Ballerburg-Castle-Chaos-SLUS-01568-Player-v0.1.9-test-online-updates.zip) |
-| Ballistic | SLUS-00966 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-6e338ead73a238fed351c608/Ballistic-SLUS-00966-Player-v0.1.9-test-online-updates.zip) |
-| Barbie - Explorer | SLUS-01361 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-5d0c06ac117c77f790da8610/Barbie-Explorer-SLUS-01361-Player-v0.1.9-test-online-updates.zip) |
-| Barbie Gotta Have Games | SLUS-01569 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-298e1c3cb01e2b768864339e/Barbie-Gotta-Have-Games-SLUS-01569-Player-v0.1.9-test-online-updates.zip) |
-| Bardysh | SLPS-02187 | Japan | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-4260b815fbf254799c1195d5/Bardysh-SLPS-02187-Player-v0.1.9-test-online-updates.zip) |
-| Bases Loaded '96 - Double Header | SLUS-00086 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-cde8772b31d56afdb51ca424/Bases-Loaded-96-Double-Header-SLUS-00086-Player-v0.1.9-test-online-updates.zip) |
-| Castlevania - Symphony of the Night | SLES-00524 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-9a1370ffb73942572451fa64/Castlevania-Symphony-of-the-Night-SLES-00524-Player-v0.1.8-mods-test-online-updates.zip) |
-| Castlevania Chronicles | SLES-03532 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-7520d70e9c98c393eb1a5358/Castlevania-Chronicles-SLES-03532-Player-v0.1.8-mods-test-online-updates.zip) |
-| Crash Bandicoot | SCES-00344 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-08629efe12a416ce3a52920e/Crash-Bandicoot-SCES-00344-Player-v0.1.8-mods-test-online-updates.zip) |
-| Crash Bandicoot 2 - Cortex Strikes Back | SCES-00967 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-e8f265d3c9f7b028a71d237d/Crash-Bandicoot-2-Cortex-Strikes-Back-SCES-00967-Player-v0.1.8-mods-test-online-updates.zip) |
-| Crash Bandicoot 3 - Warped | SCES-01420 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-981c10ac91c97cf504f363ff/Crash-Bandicoot-3-Warped-SCES-01420-Player-v0.1.8-mods-test-online-updates.zip) |
-| Diablo | SLES-01156 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-51939a77dadd91dd35ecf708/Diablo-SLES-01156-Player-v0.1.8-mods-test-online-updates.zip) |
-| Disruptor | SLES-00565 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-c291021beb5b0b11a55425d4/Disruptor-SLES-00565-Player-v0.1.9-test-online-updates.zip) |
-| Disruptor | SLUS-00224 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-855476e192bfa0c79b96bc7b/Disruptor-SLUS-00224-Player-v0.1.8-mods-test-online-updates.zip) |
-| Doom | SLES-00132 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-a53fb3e49a5036eb64cd5924/Doom-SLES-00132-Player-v0.1.8-mods-test-online-updates.zip) |
-| Driver | SLES-01975 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-7d6b7b7a63b9a9345ad1624c/Driver-SLES-01975-Player-v0.1.8-mods-test-online-updates.zip) |
-| Driver 2 - Back on the Streets (Disc 1) | SLES-02995 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-c8944aae47974c667472e16f/Driver-2-Back-on-the-Streets-Disc-1-SLES-02995-Player-v0.1.8-mods-test-online-updates.zip) |
-| Driver 2 - Back on the Streets (Disc 2) | SLES-12995 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-898736bebd0e1f2c1a2a2f5b/Driver-2-Back-on-the-Streets-Disc-2-SLES-12995-Player-v0.1.8-mods-test-online-updates.zip) |
-| Ford Racing | SLES-03276 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-847455201d79a2c9d7822de1/Ford-Racing-SLES-03276-Player-v0.1.8-mods-test-online-updates.zip) |
-| Gran Turismo | SCES-00984 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-a431cba3a545aaf5d5fba1f0/Gran-Turismo-SCES-00984-Player-v0.1.8-mods-test-online-updates.zip) |
-| Gran Turismo | SCUS-94194 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-cfc62da52155a3861e0bfc59/Gran-Turismo-SCUS-94194-Player-v0.1.8-mods-test-online-updates.zip) |
-| Gran Turismo (USA) (Rev 1) | SCUS-94194 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-f8d95054ac263733499f0a34/Gran-Turismo-USA-Rev-1-SCUS-94194-Player-v0.1.8-mods-test-online-updates.zip) |
-| Gran Turismo 2 (Bonus Disc) | SCUS-94588 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-406624d886cf60d95eb4798e/Gran-Turismo-2-Bonus-Disc-SCUS-94588-Player-v0.1.8-mods-test-online-updates.zip) |
-| Gran Turismo 2 (D1) (Arcade Mode) | SCES-02380 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-44ae2755d0a55ef065a58865/Gran-Turismo-2-D1-Arcade-Mode-SCES-02380-Player-v0.1.8-mods-test-online-updates.zip) |
-| Gran Turismo 2 (D2) (Gran Turismo Mode) | SCES-12380 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-b78ca71cde5bf8e3fe009b1d/Gran-Turismo-2-D2-Gran-Turismo-Mode-SCES-12380-Player-v0.1.8-mods-test-online-updates.zip) |
-| Namco Museum Vol. 1 | SCES-00243 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-7fc187c164b31f2180c5c333/Namco-Museum-Vol-1-SCES-00243-Player-v0.1.8-mods-test-online-updates.zip) |
-| Namco Museum Vol. 2 | SCES-00267 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-4ac1e214cd11335880201a3d/Namco-Museum-Vol-2-SCES-00267-Player-v0.1.8-mods-test-online-updates.zip) |
-| Namco Museum Vol. 3 | SCES-00268 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-310e8c3aaeac87991af76af0/Namco-Museum-Vol-3-SCES-00268-Player-v0.1.8-mods-test-online-updates.zip) |
-| Namco Museum Vol. 4 | SCES-00701 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-5605283721aa0befb167d1d9/Namco-Museum-Vol-4-SCES-00701-Player-v0.1.8-mods-test-online-updates.zip) |
-| Namco Museum Vol. 5 | SCES-00702 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-c2f3504b79bf7267e9f3d5c4/Namco-Museum-Vol-5-SCES-00702-Player-v0.1.8-mods-test-online-updates.zip) |
-| Omega Assault | SLES-04051 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-69741b108a5ae747fdf4fdb2/Omega-Assault-SLES-04051-Player-v0.1.8-mods-test-online-updates.zip) |
-| Omega Boost | SCES-02120 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-002e6b3d6c461f19752a6a83/Omega-Boost-SCES-02120-Player-v0.1.8-mods-test-online-updates.zip) |
-| Parasite Eve (USA) (Disc 1) | SLUS-00662 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-78c20e26559a40806a2767c7/Parasite-Eve-USA-Disc-1-SLUS-00662-Player-v0.1.8-mods-test-online-updates.zip) |
-| Resident Evil | SLES-00228 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-5455a22544626f48eb169e97/Resident-Evil-SLES-00228-Player-v0.1.8-mods-test-online-updates.zip) |
-| Resident Evil - Director's Cut | SLES-00971 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-86e52673425565e1d1045e5c/Resident-Evil-Director-s-Cut-SLES-00971-Player-v0.1.8-mods-test-online-updates.zip) |
-| Resident Evil - Director's Cut (Dual Shock) | SLUS-00747 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-c2f5baa88bc4f710bb7180e8/Resident-Evil-Director-s-Cut-Dual-Shock-SLUS-00747-Player-v0.1.8-mods-test-online-updates.zip) |
-| Resident Evil 2 (Disc 1) | SLES-00974 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-44adbc211bb453925b16c27c/Resident-Evil-2-Disc-1-SLES-00974-Player-v0.1.8-mods-test-online-updates.zip) |
-| Resident Evil 2 (Disc 2) | SLES-10974 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-4a2b564689ec332070006e7f/Resident-Evil-2-Disc-2-SLES-10974-Player-v0.1.8-mods-test-online-updates.zip) |
-| Resident Evil 2 - Dual Shock (Leon Disc) | SLUS-00748 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-63ee4feff668d75d8c16006d/Resident-Evil-2-Dual-Shock-Leon-Disc-SLUS-00748-Player-v0.1.8-mods-test-online-updates.zip) |
-| Resident Evil 2 - Dual Shock [Claire Disc] [U] [SLUS-00756] | SLUS-00756 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-a1541389aea748305f629096/Resident-Evil-2-Dual-Shock-Claire-Disc-U-SLUS-00756-SLUS-00756-Player-v0.1.9-test-online-updates.zip) |
-| Resident Evil 3 - Nemesis | SLES-02531 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-2f571fb5227fabbfd5647d5e/Resident-Evil-3-Nemesis-SLES-02531-Player-v0.1.8-mods-test-online-updates.zip) |
-| Spider - The Video Game | SLUS-00230 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-7220dac44c6324c06a726fe3/Spider-The-Video-Game-SLUS-00230-Player-v0.1.8-mods-test-online-updates.zip) |
-| Spider-Man | SLES-02888 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-6aef4f0a2d1aac99e5874503/Spider-Man-SLES-02888-Player-v0.1.8-mods-test-online-updates.zip) |
-| Spider-Man 2 - Enter - Electro | SLES-03625 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-d55ab52c65e667b84d0d7a92/Spider-Man-2-Enter-Electro-SLES-03625-Player-v0.1.8-mods-test-online-updates.zip) |
-| Stuart Little 2 | SCES-03821 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-50009aaa2ffaa68cf33fb6b4/Stuart-Little-2-SCES-03821-Player-v0.1.8-mods-test-online-updates.zip) |
-| Twisted Metal | SCES-00061 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-76e17913777ed0694290f54f/Twisted-Metal-SCES-00061-Player-v0.1.8-mods-test-online-updates.zip) |
-| Twisted Metal - Small Brawl | SCUS-94642 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-e460da3804f1e8972c5a1b28/Twisted-Metal-Small-Brawl-SCUS-94642-Player-v0.1.8-mods-test-online-updates.zip) |
-| Twisted Metal - World Tour | SCES-00567 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-c33a5f33bf5cd34121c0d0ee/Twisted-Metal-World-Tour-SCES-00567-Player-v0.1.8-mods-test-online-updates.zip) |
-| Twisted Metal 2 | SCUS-94306 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-307a5e5e57ed3f3ae431a609/Twisted-Metal-2-SCUS-94306-Player-v0.1.8-mods-test-online-updates.zip) |
-| Twisted Metal 4 | SCUS-94560 | USA | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-e0c0884ea2946185d59547be/Twisted-Metal-4-SCUS-94560-Player-v0.1.8-mods-test-online-updates.zip) |
-| Vigilante 8 | SLES-01214 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-3f9a6c67f428e95838ebcbf4/Vigilante-8-SLES-01214-Player-v0.1.8-mods-test-online-updates.zip) |
-| Vigilante 8 - 2nd Offense | SLES-02162 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-382b9e7f39c9eaa69b551c16/Vigilante-8-2nd-Offense-SLES-02162-Player-v0.1.8-mods-test-online-updates.zip) |
-| Warhawk - The Red Mercury Missions | SCES-00062 | Europe | [ZIP](https://github.com/RemakerGamee/ps1-remaker-public/releases/download/game-edd5ad5467db4b567d07388f/Warhawk-The-Red-Mercury-Missions-SCES-00062-Player-v0.1.8-mods-test-online-updates.zip) |
+The website currently withholds game packages while own-copy installers are rebuilt. A compiled development build does not establish playable compatibility. These are project listings, not downloadable games.
+
+Older GitHub release assets, where present, are historical and are not presented here as current available releases. No private builds, original games, BIOS or firmware are uploaded by this catalog update.
+
+[All consoles](../GAMES.md) · [Website](https://retroremakes.retroremakes.chatgpt.site/playstation-1)
+
+| Game | Edition / identity | Status |
+| --- | --- | --- |
+| [0 kara no Mahjong - Mahjong Youchien Tamago-gumi](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-0-kara-no-mahjong-mahjong-youchien-tamago-gumi-slps-01311) | SLPS-01311 | **Work in progress** — no game download |
+| [007 - The World Is Not Enough](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-007-the-world-is-not-enough-slus-01272) | SLUS-01272 | **Work in progress** — no game download |
+| [007 - Tomorrow Never Dies](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-007-tomorrow-never-dies-slus-00975) | SLUS-00975 | **Work in progress** — no game download |
+| [007 Racing](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-007-racing-slus-01300) | SLUS-01300 | **Work in progress** — no game download |
+| [100% Star](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-100-star-sles-03784) | SLES-03784 | **Work in progress** — no game download |
+| [101 Dalmatians II - Patch's London Adventure](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-101-dalmatians-ii-patch-s-london-adventure-slus-01574) | SLUS-01574 | **Work in progress** — no game download |
+| [102 Dalmatians - Puppies to the Rescue](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-102-dalmatians-puppies-to-the-rescue-slus-01152) | SLUS-01152 | **Work in progress** — no game download |
+| [10th Anniversary Memorial Save Data](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-10th-anniversary-memorial-save-data-slpm-80643) | SLPM-80643 | **Work in progress** — no game download |
+| [19-ji 03-pun - Ueno-hatsu Yakou Ressha (Demo)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-19-ji-03-pun-ueno-hatsu-yakou-ressha-slpm-80181) | SLPM-80181 | **Work in progress** — no game download |
+| [1Xtreme](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-1xtreme-scus-94503) | SCUS-94503 | **Work in progress** — no game download |
+| [2Xtreme](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-2xtreme-scus-94508) | SCUS-94508 | **Work in progress** — no game download |
+| [360 - Three Sixty](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-360-three-sixty-sles-02089) | SLES-02089 | **Work in progress** — no game download |
+| [3D Lemmings](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-3d-lemmings-scus-94601) | SCUS-94601 | **Work in progress** — no game download |
+| [3Xtreme](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-scus-94231-completed) | SCUS-94231 | **Work in progress** — no game download |
+| [40 Winks - Conquer Your Dreams featuring Ruff Tumble](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-40-winks-conquer-your-dreams-featuring-ruff-tumble-sles-01937) | SLES-01937 | **Work in progress** — no game download |
+| [4x4 World Trophy](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-4x4-world-trophy-sles-02017) | SLES-02017 | **Work in progress** — no game download |
+| [5 Star Racing](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-5-star-racing-sles-04064) | SLES-04064 | **Work in progress** — no game download |
+| [70's Robot Anime - Geppy-X - The Super Boosted Armor \[Disc 3\]](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-70-s-robot-anime-geppy-x-the-super-boosted-armor-disc-3-slps-01997) | SLPS-01997 | **Work in progress** — no game download |
+| [70s Robot Anime - Geppy-X - The Super Boosted Armor \[Disc 1\]](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-70s-robot-anime-geppy-x-the-super-boosted-armor-disc-1-slps-01995) | SLPS-01995 | **Work in progress** — no game download |
+| [70s Robot Anime - Geppy-X - The Super Boosted Armor \[Disc 2\]](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-70s-robot-anime-geppy-x-the-super-boosted-armor-disc-2-slps-01996) | SLPS-01996 | **Work in progress** — no game download |
+| [70s Robot Anime - Geppy-X - The Super Boosted Armor \[Disc 4\]](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-70s-robot-anime-geppy-x-the-super-boosted-armor-disc-4-slps-01998) | SLPS-01998 | **Work in progress** — no game download |
+| [A Bug's Life](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-a-bug-s-life-slus-01538) | SLUS-01538 | **Work in progress** — no game download |
+| [A Ressha de Ikou 4 - Evolution Global](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-a-ressha-de-ikou-4-evolution-global-slps-00125) | SLPS-00125 | **Work in progress** — no game download |
+| [A Ressha de Ikou Z - Mezase! Tairiku Oudan](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-a-ressha-de-ikou-z-mezase-tairiku-oudan-slps-02050) | SLPS-02050 | **Work in progress** — no game download |
+| [A.IV - Evolution Global](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-a-iv-evolution-global-sces-00290) | SCES-00290 | **Work in progress** — no game download |
+| [AbalaBurn](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-abalaburn-slps-01280) | SLPS-01280 | **Work in progress** — no game download |
+| [Abe a GoGo](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-abe-a-gogo-slpm-80175) | SLPM-80175 | **Work in progress** — no game download |
+| [Ace Combat 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ace-combat-2-slus-00404) | SLUS-00404 | **Work in progress** — no game download |
+| [Ace Combat 3 - Electrosphere](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ace-combat-3-electrosphere-sces-02066) | SCES-02066 | **Work in progress** — no game download |
+| [Acid](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-acid-slps-02119) | SLPS-02119 | **Work in progress** — no game download |
+| [Action Man - Operation Extreme](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-action-man-operation-extreme-slus-00887) | SLUS-00887 | **Work in progress** — no game download |
+| [Actua Soccer - Club Edition](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-actua-soccer-club-edition-sles-00190) | SLES-00190 | **Work in progress** — no game download |
+| [Actua Soccer 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-actua-soccer-2-sles-00021) | SLES-00021 | **Work in progress** — no game download |
+| [Advan Racing](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-advan-racing-slps-01689) | SLPS-01689 | **Work in progress** — no game download |
+| [Advanced V.G.](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-advanced-v-g-slpm-80017) | SLPM-80017 | **Work in progress** — no game download |
+| [Adventure of Phix](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-adventure-of-phix-slus-01523) | SLUS-01523 | **Work in progress** — no game download |
+| [Adventures of Lomax](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-adventures-of-lomax-scus-94906) | SCUS-94906 | **Work in progress** — no game download |
+| [AFL 99](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-afl-99-sles-01875) | SLES-01875 | **Work in progress** — no game download |
+| [Agent Armstrong](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-agent-armstrong-sles-00474) | SLES-00474 | **Work in progress** — no game download |
+| [Agile Warrior F-111X](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-agile-warrior-f-111x-slus-00023) | SLUS-00023 | **Work in progress** — no game download |
+| [AI Mahjong 2000](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ai-mahjong-2000-slps-02411) | SLPS-02411 | **Work in progress** — no game download |
+| [AI Mahjong Selection](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ai-mahjong-selection-slpm-87117) | SLPM-87117 | **Work in progress** — no game download |
+| [AI Shougi](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ai-shougi-slps-00109) | SLPS-00109 | **Work in progress** — no game download |
+| [AI Shougi 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ai-shougi-2-slps-01159) | SLPS-01159 | **Work in progress** — no game download |
+| [AI Shougi 2 Deluxe](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ai-shougi-2-deluxe-slps-02285) | SLPS-02285 | **Work in progress** — no game download |
+| [AI Shougi Selection](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ai-shougi-selection-slpm-87068) | SLPM-87068 | **Work in progress** — no game download |
+| [Air Combat](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-air-combat-slus-00001) | SLUS-00001 | **Work in progress** — no game download |
+| [Air Hockey](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-air-hockey-slus-01467) | SLUS-01467 | **Work in progress** — no game download |
+| [Air Race](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-air-race-sles-00762) | SLES-00762 | **Work in progress** — no game download |
+| [Air Race Championship](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-air-race-championship-slps-01879) | SLPS-01879 | **Work in progress** — no game download |
+| [Akuji - The Heartless](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-akuji-the-heartless-slus-00715) | SLUS-00715 | **Work in progress** — no game download |
+| [Aladdin In Nasira's Revenge](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-aladdin-in-nasira-s-revenge-scus-94569) | SCUS-94569 | **Work in progress** — no game download |
+| [Alex Fergusons Player Manager 2001](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-alex-fergusons) | SLES-03150 | **Work in progress** — no game download |
+| [Alex Fergusons Player Manager 2002](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-alex-fergusons-edition-51) | SLES-03775 | **Work in progress** — no game download |
+| [Alexi Lalas International Soccer](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-alexi-lalas-international-soccer-slus-00872) | SLUS-00872 | **Work in progress** — no game download |
+| [Alfred Chicken](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-alfred-chicken-sces-03817) | SCES-03817 | **Work in progress** — no game download |
+| [Alien Resurrection](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-alien-resurrection-slus-00633) | SLUS-00633 | **Work in progress** — no game download |
+| [Alien Trilogy](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-alien-trilogy-slus-00007) | SLUS-00007 | **Work in progress** — no game download |
+| [All-Star Mahjong - Karei naru Shoubushi kara no Chousen](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-all-star-mahjong-karei-naru-shoubushi-kara-no-chousen-slps-00993) | SLPS-00993 | **Work in progress** — no game download |
+| [All-Star Racing](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-all-star-racing-slus-01460) | SLUS-01460 | **Work in progress** — no game download |
+| [All-Star Slammin Dodgeball](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-all-star-slammin-dodgeball-slus-01431) | SLUS-01431 | **Work in progress** — no game download |
+| [All-Star Tennis '99](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-all-star-tennis-99-sles-03963) | SLES-03963 | **Work in progress** — no game download |
+| [All-Star Tennis 2000](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-all-star-tennis-2000-sles-02764) | SLES-02764 | **Work in progress** — no game download |
+| [All-Star Watersports](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-all-star-watersports-sles-04060) | SLES-04060 | **Work in progress** — no game download |
+| [Allied General](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-allied-general-slus-00303) | SLUS-00303 | **Work in progress** — no game download |
+| [Alone in the Dark - One Eyed Jack's Revenge](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-alone-in-the-dark-one-eyed-jack-s-revenge-slus-00239) | SLUS-00239 | **Work in progress** — no game download |
+| [Alone in the Dark - The New Nightmare \[Disc 1\]](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-alone-in-the-dark-the-new-nightmare-disc-1-slus-01201) | SLUS-01201 | **Work in progress** — no game download |
+| [Alone in the Dark - The New Nightmare \[Disc 2\]](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-alone-in-the-dark-the-new-nightmare-disc-2-slus-01377) | SLUS-01377 | **Work in progress** — no game download |
+| [Alundra 1](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-alundra-1-slus-00553) | SLUS-00553 | **Work in progress** — no game download |
+| [Alundra 2 - A New Legend Begins](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-alundra-2-a-new-legend-begins-slus-01017) | SLUS-01017 | **Work in progress** — no game download |
+| [Amazing Virtual Sea Monkeys](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-amazing-virtual-sea-monkeys-slus-01475) | SLUS-01475 | **Work in progress** — no game download |
+| [American Pool](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-american-pool-slus-01488) | SLUS-01488 | **Work in progress** — no game download |
+| [Animal Snap Rescue Them 2 by 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-animal-snap-rescue-them-2-by-2-sles-04036) | SLES-04036 | **Work in progress** — no game download |
+| [Animaniacs - Ten Pin Alley](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-animaniacs-ten-pin-alley-slus-00784) | SLUS-00784 | **Work in progress** — no game download |
+| [Anna Kournikovas Smash Court Tennis](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-anna-kournikovas-smash-court-tennis-sces-01833) | SCES-01833 | **Work in progress** — no game download |
+| [Ape Escape](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ape-escape-scus-94423) | SCUS-94423 | **Work in progress** — no game download |
+| [Apocalypse](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-apocalypse-slus-00373) | SLUS-00373 | **Work in progress** — no game download |
+| [Aqua GT](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-aqua-gt-sles-02930) | SLES-02930 | **Work in progress** — no game download |
+| [Aquanaut's Holiday](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-aquanaut-s-holiday-scus-94603) | SCUS-94603 | **Work in progress** — no game download |
+| [Armed Fighter](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-armed-fighter-slps-01598) | SLPS-01598 | **Work in progress** — no game download |
+| [Armored Core - Master of Arena](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-armored-core-master-of-arena-slus-01030) | SLUS-01030 | **Work in progress** — no game download |
+| [Armored Core Project Phantasma](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-armored-core-project-phantasma-slus-00670) | SLUS-00670 | **Work in progress** — no game download |
+| [Armorines - Project S.W.A.R.M](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-armorines-project-s-w-a-r-m-slus-01022) | SLUS-01022 | **Work in progress** — no game download |
+| [Army Men - Air Attack](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-army-men-air-attack-slus-00913) | SLUS-00913 | **Work in progress** — no game download |
+| [Army Men - Air Attack 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-army-men-air-attack-2-slus-01132) | SLUS-01132 | **Work in progress** — no game download |
+| [Army Men - Green Rogue](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-army-men-green-rogue-slus-01330) | SLUS-01330 | **Work in progress** — no game download |
+| [Army Men - Sarge's Heroes](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-army-men-sarge-s-heroes-slus-00914) | SLUS-00914 | **Work in progress** — no game download |
+| [Army Men - Sarge's Heroes 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-army-men-sarge-s-heroes-2-sles-03316) | SLES-03316 | **Work in progress** — no game download |
+| [Army Men 3D](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-army-men-3d-slus-00491) | SLUS-00491 | **Work in progress** — no game download |
+| [Army Men World War](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-army-men-world-war-slus-01079) | SLUS-01079 | **Work in progress** — no game download |
+| [Army Men World War - Final Front](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-army-men-world-war-final-front-slus-01327) | SLUS-01327 | **Work in progress** — no game download |
+| [Army Men World War - Team Assault](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-army-men-world-war-team-assault-slus-01435) | SLUS-01435 | **Work in progress** — no game download |
+| [Art Truck Battle](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-art-truck-battle-slps-01441) | SLPS-01441 | **Work in progress** — no game download |
+| [Assault](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-assault-sles-01244) | SLES-01244 | **Work in progress** — no game download |
+| [Assault Retribution](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-assault-retribution-slus-00713) | SLUS-00713 | **Work in progress** — no game download |
+| [Assault Rigs](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-assault-rigs-scus-94405) | SCUS-94405 | **Work in progress** — no game download |
+| [Asterix Mega Madness](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-asterix-mega-madness-sles-03324) | SLES-03324 | **Work in progress** — no game download |
+| [Asuka 120 - Burning Fest Final](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-asuka-120-burning-fest-final-slps-02074) | SLPS-02074 | **Work in progress** — no game download |
+| [Atari - Anniversary Edition](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-atari-anniversary-edition-slus-01427) | SLUS-01427 | **Work in progress** — no game download |
+| [Atlantis - El Imperio Perdido](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-atlantis-el-imperio-perdido-sces-03541) | SCES-03541 | **Work in progress** — no game download |
+| [Attack of the Saucerman](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-attack-of-the-saucerman-slus-01718) | SLUS-01718 | **Work in progress** — no game download |
+| [ATV Racers](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-atv-racers-sles-04059) | SLES-04059 | **Work in progress** — no game download |
+| [Auto Destruct](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-auto-destruct-slus-00522) | SLUS-00522 | **Work in progress** — no game download |
+| [Autobahn Racer 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-autobahn-racer-2-sles-02341) | SLES-02341 | **Work in progress** — no game download |
+| [Ayrton Senna - Kart Duel](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ayrton-senna-kart-duel-sles-00493) | SLES-00493 | **Work in progress** — no game download |
+| [Azito 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-azito-2-slps-01526) | SLPS-01526 | **Work in progress** — no game download |
+| [B-Movie](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-b-movie-sles-01550) | SLES-01550 | **Work in progress** — no game download |
+| [Baby Felix Tennis](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-baby-felix-tennis-sles-03991) | SLES-03991 | **Work in progress** — no game download |
+| [Bakumatsu Roman - Gekka no Kenshi \[The Last Blade\]](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-bakumatsu-roman-gekka-no-kenshi-the-last-blade-slpm-86118) | SLPM-86118 | **Work in progress** — no game download |
+| [Bakuryu](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-bakuryu-slps-02429) | SLPS-02429 | **Work in progress** — no game download |
+| [Baldy Land](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-baldy-land-slps-01074) | SLPS-01074 | **Work in progress** — no game download |
+| [Ball Breakers](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ball-breakers-slus-01249) | SLUS-01249 | **Work in progress** — no game download |
+| [Ballerburg Castle Chaos](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ballerburg-castle-chaos-slus-01568) | SLUS-01568 | **Work in progress** — no game download |
+| [Ballistic](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ballistic-slus-00966) | SLUS-00966 | **Work in progress** — no game download |
+| [Barbie - Explorer](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-barbie-explorer-slus-01361) | SLUS-01361 | **Work in progress** — no game download |
+| [Barbie Gotta Have Games](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-barbie-gotta-have-games-slus-01569) | SLUS-01569 | **Work in progress** — no game download |
+| [Bardysh](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-bardysh-slps-02187) | SLPS-02187 | **Work in progress** — no game download |
+| [Bases Loaded '96 - Double Header](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-bases-loaded-96-double-header-slus-00086) | SLUS-00086 | **Work in progress** — no game download |
+| [Bass Fishing Game - Lake Masters](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slps-00408-completed) | SLPS-00408 | **Work in progress** — no game download |
+| [BassRise Fishing](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00905-completed) | SLUS-00905 | **Work in progress** — no game download |
+| [Batman - Gotham City Racer](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-01141-completed) | SLUS-01141 | **Work in progress** — no game download |
+| [Batman and Robin](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00393-completed) | SLUS-00393 | **Work in progress** — no game download |
+| [Batman Beyond - Return Of The Joker](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-01207-completed) | SLUS-01207 | **Work in progress** — no game download |
+| [Batman Forever - The Arcade Game](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00387-completed) | SLUS-00387 | **Work in progress** — no game download |
+| [Battle Arena Toshinden 1](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-scus-94200-completed) | SCUS-94200 | **Work in progress** — no game download |
+| [Battle Arena Toshinden 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slps-00200-completed) | SLPS-00200 | **Work in progress** — no game download |
+| [Battle Arena Toshinden 2 Plus](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slps-91006-completed) | SLPS-91006 | **Work in progress** — no game download |
+| [Battle Arena Toshinden 3](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slps-00650-completed) | SLPS-00650 | **Work in progress** — no game download |
+| [Battle Arena Toshinden 4](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-sles-02493-completed) | SLES-02493 | **Work in progress** — no game download |
+| [Battle Hunter](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-01335-completed) | SLUS-01335 | **Work in progress** — no game download |
+| [Battle Stations](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00456-completed) | SLUS-00456 | **Work in progress** — no game download |
+| [Battletanx - Global Assault](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-sles-02773-completed) | SLES-02773 | **Work in progress** — no game download |
+| [Beast Wars - Transformers](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00508-completed) | SLUS-00508 | **Work in progress** — no game download |
+| [Beyblade 2002 - BeyBattle Tornament 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slpm-87130-completed) | SLPM-87130 | **Work in progress** — no game download |
+| [Beyblade Let It Rip!](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-01489-completed) | SLUS-01489 | **Work in progress** — no game download |
+| [Beyond the Beyond](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-scus-94702-completed) | SCUS-94702 | **Work in progress** — no game download |
+| [Big Air](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00645-completed) | SLUS-00645 | **Work in progress** — no game download |
+| [Big Bass Fishing](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-01442-completed) | SLUS-01442 | **Work in progress** — no game download |
+| [Big League - Slugger Baseball](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-01527-completed) | SLUS-01527 | **Work in progress** — no game download |
+| [Big Strike Bowling](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-01478-completed) | SLUS-01478 | **Work in progress** — no game download |
+| [Billiards](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-01289-completed) | SLUS-01289 | **Work in progress** — no game download |
+| [Bio F.R.E.A.K.S](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00502-completed) | SLUS-00502 | **Work in progress** — no game download |
+| [Black Dawn](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00321-completed) | SLUS-00321 | **Work in progress** — no game download |
+| [Blade](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-sles-03213-completed) | SLES-03213 | **Work in progress** — no game download |
+| [Blademaker](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slps-01795-completed) | SLPS-01795 | **Work in progress** — no game download |
+| [Blam Machinehead](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-sles-00349-completed) | SLES-00349 | **Work in progress** — no game download |
+| [Blast Chamber](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00219-completed) | SLUS-00219 | **Work in progress** — no game download |
+| [Blast Radius](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00642-completed) | SLUS-00642 | **Work in progress** — no game download |
+| [Blaster Master](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-01031-completed) | SLUS-01031 | **Work in progress** — no game download |
+| [Blasto](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-scus-94412-completed) | SCUS-94412 | **Work in progress** — no game download |
+| [Blazing Dragons](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00100-completed) | SLUS-00100 | **Work in progress** — no game download |
+| [Block Kuzushi 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slps-02578-completed) | SLPS-02578 | **Work in progress** — no game download |
+| [Block Kuzushi Kowashite Help!](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slps-03042-completed) | SLPS-03042 | **Work in progress** — no game download |
+| [Blood Omen - Legacy of Kain](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-sles-00523-completed) | SLES-00523 | **Work in progress** — no game download |
+| [Bloody Roar 1](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-scus-94199-completed) | SCUS-94199 | **Work in progress** — no game download |
+| [Bloody Roar 2 - Bringer of The New Age](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-sles-01722-completed) | SLES-01722 | **Work in progress** — no game download |
+| [Board Game - Top Shop](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-01333-completed) | SLUS-01333 | **Work in progress** — no game download |
+| [Bob The Builder - Can We Fix It](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-01407-completed) | SLUS-01407 | **Work in progress** — no game download |
+| [Castlevania - Symphony of the Night](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-castlevania-symphony-of-the-night) | SLES-00524 | **Work in progress** — no game download |
+| [Castlevania Chronicles](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-castlevania-chronicles) | SLES-03532 | **Work in progress** — no game download |
+| [Crash Bandicoot](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-crash-bandicoot) | SCES-00344 | **Work in progress** — no game download |
+| [Crash Bandicoot 2 - Cortex Strikes Back](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-crash-bandicoot-2-cortex-strikes-back) | SCES-00967 | **Work in progress** — no game download |
+| [Crash Bandicoot 3 - Warped](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-crash-bandicoot-3-warped) | SCES-01420 | **Work in progress** — no game download |
+| [Diablo](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-diablo) | SLES-01156 | **Work in progress** — no game download |
+| [Disruptor](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-disruptor-sles-00565) | SLES-00565 | **Work in progress** — no game download |
+| [Disruptor](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-disruptor) | SLUS-00224 | **Work in progress** — no game download |
+| [Doom](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-doom) | SLES-00132 | **Work in progress** — no game download |
+| [Driver](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-driver) | SLES-01975 | **Work in progress** — no game download |
+| [Driver 2 - Back on the Streets (Disc 1)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-driver-2-back-on-the-streets-disc-1) | SLES-02995 | **Work in progress** — no game download |
+| [Driver 2 - Back on the Streets (Disc 2)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-driver-2-back-on-the-streets-disc-2) | SLES-12995 | **Work in progress** — no game download |
+| [Ford Racing](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-ford-racing) | SLES-03276 | **Work in progress** — no game download |
+| [Gran Turismo](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-gran-turismo) | SCES-00984 | **Work in progress** — no game download |
+| [Gran Turismo](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-gran-turismo-scus-94194) | SCUS-94194 | **Work in progress** — no game download |
+| [Gran Turismo (USA) (Rev 1)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-gran-turismo-usa-rev-1-scus-94194) | SCUS-94194 | **Work in progress** — no game download |
+| [Gran Turismo 2 (Bonus Disc)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-gran-turismo-2-bonus-disc) | SCUS-94588 | **Work in progress** — no game download |
+| [Gran Turismo 2 (D1) (Arcade Mode)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-gran-turismo-2-d1-arcade-mode) | SCES-02380 | **Work in progress** — no game download |
+| [Gran Turismo 2 (D2) (Gran Turismo Mode)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-gran-turismo-2-d2-gran-turismo-mode) | SCES-12380 | **Work in progress** — no game download |
+| [Namco Museum Vol. 1](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-namco-museum-vol-1-sces-00243) | SCES-00243 | **Work in progress** — no game download |
+| [Namco Museum Vol. 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-namco-museum-vol-2-sces-00267) | SCES-00267 | **Work in progress** — no game download |
+| [Namco Museum Vol. 3](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-namco-museum-vol-3-sces-00268) | SCES-00268 | **Work in progress** — no game download |
+| [Namco Museum Vol. 4](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-namco-museum-vol-4-sces-00701) | SCES-00701 | **Work in progress** — no game download |
+| [Namco Museum Vol. 5](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-namco-museum-vol-5-sces-00702) | SCES-00702 | **Work in progress** — no game download |
+| [Omega Assault](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-omega-assault-sles-04051) | SLES-04051 | **Work in progress** — no game download |
+| [Omega Boost](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-omega-boost-sces-02120) | SCES-02120 | **Work in progress** — no game download |
+| [Parasite Eve (USA) (Disc 1)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-parasite-eve-usa-disc-1-slus-00662) | SLUS-00662 | **Work in progress** — no game download |
+| [Resident Evil](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-resident-evil-sles-00228) | SLES-00228 | **Work in progress** — no game download |
+| [Resident Evil - Director's Cut](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-resident-evil-director-s-cut-sles-00971) | SLES-00971 | **Work in progress** — no game download |
+| [Resident Evil - Director's Cut (Dual Shock)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-resident-evil-director-s-cut-dual-shock-slus-00747) | SLUS-00747 | **Work in progress** — no game download |
+| [Resident Evil 2 (Disc 1)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-resident-evil-2-disc-1-sles-00974) | SLES-00974 | **Work in progress** — no game download |
+| [Resident Evil 2 (Disc 2)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-resident-evil-2-disc-2-sles-10974) | SLES-10974 | **Work in progress** — no game download |
+| [Resident Evil 2 - Dual Shock (Leon Disc)](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-resident-evil-2-dual-shock-leon-disc-slus-00748) | SLUS-00748 | **Work in progress** — no game download |
+| [Resident Evil 2 - Dual Shock \[Claire Disc\] \[U\] \[SLUS-00756\]](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-resident-evil-2-dual-shock-claire-disc-u-slus-00756-slus-00756) | SLUS-00756 | **Work in progress** — no game download |
+| [Resident Evil 3 - Nemesis](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-resident-evil-3-nemesis-sles-02531) | SLES-02531 | **Work in progress** — no game download |
+| [Revelations Persona](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-slus-00339-completed) | SLUS-00339 | **Work in progress** — no game download |
+| [Spider - The Video Game](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-spider-the-video-game-slus-00230) | SLUS-00230 | **Work in progress** — no game download |
+| [Spider-Man](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-spider-man-sles-02888) | SLES-02888 | **Work in progress** — no game download |
+| [Spider-Man 2 - Enter - Electro](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-spider-man-2-enter-electro-sles-03625) | SLES-03625 | **Work in progress** — no game download |
+| [Stuart Little 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-stuart-little-2) | SCES-03821 | **Work in progress** — no game download |
+| [Twisted Metal](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-twisted-metal) | SCES-00061 | **Work in progress** — no game download |
+| [Twisted Metal - Small Brawl](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-twisted-metal-small-brawl) | SCUS-94642 | **Work in progress** — no game download |
+| [Twisted Metal - World Tour](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-twisted-metal-world-tour) | SCES-00567 | **Work in progress** — no game download |
+| [Twisted Metal 2](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-twisted-metal-2) | SCUS-94306 | **Work in progress** — no game download |
+| [Twisted Metal 4](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-twisted-metal-4) | SCUS-94560 | **Work in progress** — no game download |
+| [Vigilante 8](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-vigilante-8) | SLES-01214 | **Work in progress** — no game download |
+| [Vigilante 8 - 2nd Offense](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-vigilante-8-2nd-offense) | SLES-02162 | **Work in progress** — no game download |
+| [Warhawk - The Red Mercury Missions](https://retroremakes.retroremakes.chatgpt.site/playstation-1#ps1-warhawk-the-red-mercury-missions) | SCES-00062 | **Work in progress** — no game download |

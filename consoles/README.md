@@ -1,8 +1,9 @@
-# Console game download indexes
+# Console game indexes
 
-- [Nintendo 64](n64)
-- [Xbox 360](xbox-360)
-- [PlayStation 2 — work in progress](ps2)
-- [PlayStation 1](../games)
+- [PlayStation 1 — 206 Work in progress listings](../games/README.md)
+- [Xbox 360 — 37 Work in progress listings](../consoles/xbox-360/README.md)
+- [PlayStation 2 — 3 Work in progress listings](../consoles/ps2/README.md)
+- [PlayStation 3 — 12 Work in progress listings](../consoles/ps3/README.md)
+- [Nintendo 64 — 5 Work in progress listings](../consoles/n64/README.md)
 
-Only existing public game packages are mirrored. No generic Player/Studio downloads are added by this console mirror. Owners must supply the original game files required by each project. Private MP1, V8 and Fable builds remain unpublished.
+[Current catalog and availability](../GAMES.md). The current website has no public game downloads. Historical release records remain preserved and do not establish current availability.

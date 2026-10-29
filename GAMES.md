@@ -1,11 +1,17 @@
-# PS1 game players
+# RetroRemakes game catalog
 
-All 164 reviewed game ZIPs have been mirrored to GitHub Releases. Every asset size and GitHub SHA256 digest matches the reviewed website catalog. See the [game index](games/README.md). Game ZIPs are hosted in this repository's [Releases](https://github.com/RemakerGamee/ps1-remaker-public/releases) section. Each game and disc revision has a separate checksum-addressed release. The website remains the original download and online-update source.
+Updated October 28, 2026. **263 game/disc listings across five consoles.**
 
-These are experimental native player projects. Supply your own original game disc and supported BIOS. Neither is supplied here. Inclusion in the catalog does not establish successful gameplay or universal compatibility.
+**Work in progress:** the current website does not offer public game packages. These listings do not promise a completed port or playable download. Older releases remain historical; they are not current download recommendations.
 
-New downloads contain `Start-Update.cmd` for updates matched to that exact game and disc revision. Close that game's player before installing. Other game installations can remain open. Existing saves, settings, disc/BIOS paths and mods remain separate from update targets. The initial updater retrofit preserves each native game executable byte for byte.
+| Console | Listed projects / disc editions | Status |
+| --- | ---: | --- |
+| [PlayStation 1](games/README.md) | 206 | **Work in progress** |
+| [Xbox 360](consoles/xbox-360/README.md) | 37 | **Work in progress** |
+| [PlayStation 2](consoles/ps2/README.md) | 3 | **Work in progress** |
+| [PlayStation 3](consoles/ps3/README.md) | 12 | **Work in progress** |
+| [Nintendo 64](consoles/n64/README.md) | 5 | **Work in progress** |
 
-The mirror workflow reads `games/catalog.json`, downloads each ZIP from the official HTTPS website, checks the exact size and SHA256, reads ZIP paths and CRCs without executing anything, verifies the per-game updater identity and native baseline, then uploads a draft GitHub Release. It publishes only after GitHub reports the expected asset size and SHA256. Existing matching releases are retained. A failed check stops that run and retains its report.
+Games are alphabetical within each console. PS1 counts include separate disc and regional editions. See [machine-readable status](game-status.json).
 
-Preserve the individual packages' licenses and third-party notices. Checksum verification does not establish publisher signing. This repository does not change upstream license terms or guarantee game compatibility.
+The current site withdraws prior game download routes while installers are rebuilt from user-owned files. No withdrawn package, private build, original disc/ROM, BIOS, firmware, save or personal setting is newly uploaded by this update. Existing release history and source licenses are preserved.
