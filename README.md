@@ -1,6 +1,6 @@
 # RetroRemakes PS1 Remaker
 
-> **Current game status — October 30, 2026:** [206 PS1 individual experimental installers are live](games/README.md). The other 113 console listings remain **Work in progress**. Installers ask for your BIOS, CHD or CUE/BIN, install folder and save folder.
+> **Current game status — October 30, 2026:** [206 PS1 individual experimental installers are live](games/README.md). **61 N64 games boot and run according to the owner; N64 installers remain unavailable.** The other 52 console listings remain **Work in progress**. Installers ask for your BIOS, CHD or CUE/BIN, install folder and save folder.
 
 Public Player beta **v0.21.15-public-beta** is available. Remaker-only and combined application packages remain **v0.21.14-public-beta**. These Windows applications and game projects remain experimental.
 
