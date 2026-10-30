@@ -3,7 +3,7 @@
   "updated": "2026-10-30",
   "source_site_version": 243,
   "source_commit": "b1547b18e805c61d28f4b105599161cad8a89892",
-  "scope": "Current public console game listings. PS1 has individual experimental own-copy installers; other consoles remain Work in progress.",
+  "scope": "Current public console game listings. PS1 has individual experimental own-copy installers. N64 boot and run are owner-reported; other consoles retain their recorded status.",
   "counts": {
     "PlayStation 1": 206,
     "Xbox 360": 37,
@@ -6771,8 +6771,8 @@
       "platform": "n64",
       "id": "aidyn-chronicles-the-first-mage",
       "title": "Aidyn Chronicles: The First Mage",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#aidyn-chronicles-the-first-mage",
@@ -6785,14 +6785,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "army-men-sarges-heroes",
       "title": "Army Men: Sarge’s Heroes",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#army-men-sarges-heroes",
@@ -6805,14 +6810,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "banjo-kazooie",
       "title": "Banjo-Kazooie",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#banjo-kazooie",
@@ -6825,14 +6835,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "banjo-tooie",
       "title": "Banjo-Tooie",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#banjo-tooie",
@@ -6845,14 +6860,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "battletanx",
       "title": "BattleTanx",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#battletanx",
@@ -6865,14 +6885,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "battletanx-global-assault",
       "title": "BattleTanx: Global Assault",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#battletanx-global-assault",
@@ -6885,14 +6910,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "blast-corps",
       "title": "Blast Corps",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#blast-corps",
@@ -6905,14 +6935,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "body-harvest",
       "title": "Body Harvest",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#body-harvest",
@@ -6925,14 +6960,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "bomberman-64",
       "title": "Bomberman 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#bomberman-64",
@@ -6945,14 +6985,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "bomberman-64-the-second-attack",
       "title": "Bomberman 64: The Second Attack!",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#bomberman-64-the-second-attack",
@@ -6965,14 +7010,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "bomberman-hero",
       "title": "Bomberman Hero",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#bomberman-hero",
@@ -6985,14 +7035,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "castlevania-legacy-of-darkness",
       "title": "Castlevania: Legacy of Darkness",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#castlevania-legacy-of-darkness",
@@ -7005,14 +7060,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "conkers-bad-fur-day",
       "title": "Conker’s Bad Fur Day",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#conkers-bad-fur-day",
@@ -7025,14 +7085,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "diddy-kong-racing",
       "title": "Diddy Kong Racing",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#diddy-kong-racing",
@@ -7045,14 +7110,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "donkey-kong-64",
       "title": "Donkey Kong 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#donkey-kong-64",
@@ -7065,14 +7135,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "doom-64",
       "title": "Doom 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#doom-64",
@@ -7085,14 +7160,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "dr-mario-64",
       "title": "Dr. Mario 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#dr-mario-64",
@@ -7105,14 +7185,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "duke-nukem-64",
       "title": "Duke Nukem 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#duke-nukem-64",
@@ -7125,14 +7210,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "duke-nukem-zero-hour",
       "title": "Duke Nukem: Zero Hour",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#duke-nukem-zero-hour",
@@ -7145,14 +7235,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "f-zero-x",
       "title": "F-Zero X",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#f-zero-x",
@@ -7165,14 +7260,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "glover",
       "title": "Glover",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#glover",
@@ -7185,14 +7285,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "goldeneye-007",
       "title": "GoldenEye 007",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#goldeneye-007",
@@ -7205,14 +7310,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "harvest-moon-64",
       "title": "Harvest Moon 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#harvest-moon-64",
@@ -7225,14 +7335,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "hybrid-heaven",
       "title": "Hybrid Heaven",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#hybrid-heaven",
@@ -7245,14 +7360,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "jet-force-gemini",
       "title": "Jet Force Gemini",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#jet-force-gemini",
@@ -7265,14 +7385,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "kirby-64-the-crystal-shards",
       "title": "Kirby 64: The Crystal Shards",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#kirby-64-the-crystal-shards",
@@ -7285,14 +7410,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "mario-kart-64",
       "title": "Mario Kart 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#mario-kart-64",
@@ -7305,14 +7435,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "mario-party-1",
       "title": "Mario Party",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#mario-party-1",
@@ -7325,14 +7460,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "mario-party-2",
       "title": "Mario Party 2",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#mario-party-2",
@@ -7345,14 +7485,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "mario-party-3",
       "title": "Mario Party 3",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#mario-party-3",
@@ -7365,14 +7510,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "mega-man-64",
       "title": "Mega Man 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#mega-man-64",
@@ -7385,14 +7535,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "mischief-makers",
       "title": "Mischief Makers",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#mischief-makers",
@@ -7405,14 +7560,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "mortal-kombat-trilogy",
       "title": "Mortal Kombat Trilogy",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#mortal-kombat-trilogy",
@@ -7425,14 +7585,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "mystical-ninja-starring-goemon",
       "title": "Mystical Ninja Starring Goemon",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#mystical-ninja-starring-goemon",
@@ -7445,14 +7610,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "paper-mario",
       "title": "Paper Mario",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#paper-mario",
@@ -7465,14 +7635,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "perfect-dark",
       "title": "Perfect Dark",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#perfect-dark",
@@ -7485,14 +7660,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "pilotwings-64",
       "title": "Pilotwings 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#pilotwings-64",
@@ -7505,14 +7685,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "quest-64",
       "title": "Quest 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#quest-64",
@@ -7525,14 +7710,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "rampage-2-universal-tour",
       "title": "Rampage 2: Universal Tour",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#rampage-2-universal-tour",
@@ -7545,14 +7735,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "rampage-world-tour",
       "title": "Rampage: World Tour",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#rampage-world-tour",
@@ -7565,14 +7760,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "road-rash-64",
       "title": "Road Rash 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#road-rash-64",
@@ -7585,14 +7785,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "rush-2-extreme-racing-usa",
       "title": "Rush 2: Extreme Racing USA",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#rush-2-extreme-racing-usa",
@@ -7605,14 +7810,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "san-francisco-rush-2049",
       "title": "San Francisco Rush 2049",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#san-francisco-rush-2049",
@@ -7625,14 +7835,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "snowboard-kids",
       "title": "Snowboard Kids",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#snowboard-kids",
@@ -7645,14 +7860,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "snowboard-kids-2",
       "title": "Snowboard Kids 2",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#snowboard-kids-2",
@@ -7665,14 +7885,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "space-station-silicon-valley",
       "title": "Space Station Silicon Valley",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#space-station-silicon-valley",
@@ -7685,14 +7910,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "star-fox-64",
       "title": "Star Fox 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#star-fox-64",
@@ -7705,14 +7935,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "star-wars-episode-i-racer",
       "title": "Star Wars Episode I: Racer",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#star-wars-episode-i-racer",
@@ -7725,14 +7960,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "star-wars-rogue-squadron",
       "title": "Star Wars: Rogue Squadron",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#star-wars-rogue-squadron",
@@ -7745,14 +7985,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "starcraft-64",
       "title": "StarCraft 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#starcraft-64",
@@ -7765,14 +8010,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "super-mario-64",
       "title": "Super Mario 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#super-mario-64",
@@ -7785,14 +8035,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "super-smash-bros",
       "title": "Super Smash Bros.",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#super-smash-bros",
@@ -7805,14 +8060,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "the-legend-of-zelda-majoras-mask",
       "title": "The Legend of Zelda: Majora’s Mask",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#the-legend-of-zelda-majoras-mask",
@@ -7825,14 +8085,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "the-legend-of-zelda-ocarina-of-time",
       "title": "The Legend of Zelda: Ocarina of Time",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#the-legend-of-zelda-ocarina-of-time",
@@ -7845,14 +8110,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "tony-hawks-pro-skater",
       "title": "Tony Hawk's Pro Skater",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#tony-hawks-pro-skater",
@@ -7865,14 +8135,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "turok-rage-wars",
       "title": "Turok: Rage Wars",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#turok-rage-wars",
@@ -7885,14 +8160,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "wcw-vs-nwo-world-tour",
       "title": "WCW vs. nWo: World Tour",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#wcw-vs-nwo-world-tour",
@@ -7905,14 +8185,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "wcw-nwo-revenge",
       "title": "WCW/nWo Revenge",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#wcw-nwo-revenge",
@@ -7925,14 +8210,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "wave-race-64",
       "title": "Wave Race 64",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#wave-race-64",
@@ -7945,14 +8235,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "wayne-gretzkys-3d-hockey",
       "title": "Wayne Gretzky’s 3D Hockey",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#wayne-gretzkys-3d-hockey",
@@ -7965,14 +8260,19 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     },
     {
       "platform": "n64",
       "id": "yoshis-story",
       "title": "Yoshi’s Story",
-      "status": "work_in_progress",
-      "status_label": "Work in progress",
+      "status": "functioning_owner_reported",
+      "status_label": "Functioning — owner-reported boot and run",
       "game_download_available": false,
       "download_url": null,
       "website_url": "https://retroremakes.retroremakes.chatgpt.site/n64#yoshis-story",
@@ -7985,6 +8285,11 @@
       "updates": {
         "available": false,
         "status": "No approved public installer update available"
+      },
+      "boot_and_run": {
+        "reported_by": "owner",
+        "reported_on": "2026-10-30",
+        "passed": true
       }
     }
   ],
