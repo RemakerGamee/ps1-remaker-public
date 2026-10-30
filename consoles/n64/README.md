@@ -2,7 +2,7 @@
 
 Updated October 30, 2026.
 
-**61 built game projects — Work in progress.** Each title has a successful local compilation record. Compilation is not verification of playable gameplay.
+**61 functioning game projects — owner-reported boot and run.** The owner reports that all listed N64 games boot and run. Full gameplay, every feature and every hardware configuration have not been independently verified.
 
 No N64 game download is available from this catalog. ROM-free, own-copy installers remain pending release checks. No ROMs, extracted game assets, generated game code or compiled game executables are included.
 
@@ -10,67 +10,67 @@ No N64 game download is available from this catalog. ROM-free, own-copy installe
 
 | Game | Status |
 | --- | --- |
-| Aidyn Chronicles: The First Mage | **Work in progress** — installer unavailable |
-| Army Men: Sarge’s Heroes | **Work in progress** — installer unavailable |
-| Banjo-Kazooie | **Work in progress** — installer unavailable |
-| Banjo-Tooie | **Work in progress** — installer unavailable |
-| BattleTanx | **Work in progress** — installer unavailable |
-| BattleTanx: Global Assault | **Work in progress** — installer unavailable |
-| Blast Corps | **Work in progress** — installer unavailable |
-| Body Harvest | **Work in progress** — installer unavailable |
-| Bomberman 64 | **Work in progress** — installer unavailable |
-| Bomberman 64: The Second Attack! | **Work in progress** — installer unavailable |
-| Bomberman Hero | **Work in progress** — installer unavailable |
-| Castlevania: Legacy of Darkness | **Work in progress** — installer unavailable |
-| Conker’s Bad Fur Day | **Work in progress** — installer unavailable |
-| Diddy Kong Racing | **Work in progress** — installer unavailable |
-| Donkey Kong 64 | **Work in progress** — installer unavailable |
-| Doom 64 | **Work in progress** — installer unavailable |
-| Dr. Mario 64 | **Work in progress** — installer unavailable |
-| Duke Nukem 64 | **Work in progress** — installer unavailable |
-| Duke Nukem: Zero Hour | **Work in progress** — installer unavailable |
-| F-Zero X | **Work in progress** — installer unavailable |
-| Glover | **Work in progress** — installer unavailable |
-| GoldenEye 007 | **Work in progress** — installer unavailable |
-| Harvest Moon 64 | **Work in progress** — installer unavailable |
-| Hybrid Heaven | **Work in progress** — installer unavailable |
-| Jet Force Gemini | **Work in progress** — installer unavailable |
-| Kirby 64: The Crystal Shards | **Work in progress** — installer unavailable |
-| Mario Kart 64 | **Work in progress** — installer unavailable |
-| Mario Party | **Work in progress** — installer unavailable |
-| Mario Party 2 | **Work in progress** — installer unavailable |
-| Mario Party 3 | **Work in progress** — installer unavailable |
-| Mega Man 64 | **Work in progress** — installer unavailable |
-| Mischief Makers | **Work in progress** — installer unavailable |
-| Mortal Kombat Trilogy | **Work in progress** — installer unavailable |
-| Mystical Ninja Starring Goemon | **Work in progress** — installer unavailable |
-| Paper Mario | **Work in progress** — installer unavailable |
-| Perfect Dark | **Work in progress** — installer unavailable |
-| Pilotwings 64 | **Work in progress** — installer unavailable |
-| Quest 64 | **Work in progress** — installer unavailable |
-| Rampage 2: Universal Tour | **Work in progress** — installer unavailable |
-| Rampage: World Tour | **Work in progress** — installer unavailable |
-| Road Rash 64 | **Work in progress** — installer unavailable |
-| Rush 2: Extreme Racing USA | **Work in progress** — installer unavailable |
-| San Francisco Rush 2049 | **Work in progress** — installer unavailable |
-| Snowboard Kids | **Work in progress** — installer unavailable |
-| Snowboard Kids 2 | **Work in progress** — installer unavailable |
-| Space Station Silicon Valley | **Work in progress** — installer unavailable |
-| Star Fox 64 | **Work in progress** — installer unavailable |
-| Star Wars Episode I: Racer | **Work in progress** — installer unavailable |
-| Star Wars: Rogue Squadron | **Work in progress** — installer unavailable |
-| StarCraft 64 | **Work in progress** — installer unavailable |
-| Super Mario 64 | **Work in progress** — installer unavailable |
-| Super Smash Bros. | **Work in progress** — installer unavailable |
-| The Legend of Zelda: Majora’s Mask | **Work in progress** — installer unavailable |
-| The Legend of Zelda: Ocarina of Time | **Work in progress** — installer unavailable |
-| Tony Hawk's Pro Skater | **Work in progress** — installer unavailable |
-| Turok: Rage Wars | **Work in progress** — installer unavailable |
-| WCW vs. nWo: World Tour | **Work in progress** — installer unavailable |
-| WCW/nWo Revenge | **Work in progress** — installer unavailable |
-| Wave Race 64 | **Work in progress** — installer unavailable |
-| Wayne Gretzky’s 3D Hockey | **Work in progress** — installer unavailable |
-| Yoshi’s Story | **Work in progress** — installer unavailable |
+| Aidyn Chronicles: The First Mage | **Functioning — owner-reported**; installer unavailable |
+| Army Men: Sarge’s Heroes | **Functioning — owner-reported**; installer unavailable |
+| Banjo-Kazooie | **Functioning — owner-reported**; installer unavailable |
+| Banjo-Tooie | **Functioning — owner-reported**; installer unavailable |
+| BattleTanx | **Functioning — owner-reported**; installer unavailable |
+| BattleTanx: Global Assault | **Functioning — owner-reported**; installer unavailable |
+| Blast Corps | **Functioning — owner-reported**; installer unavailable |
+| Body Harvest | **Functioning — owner-reported**; installer unavailable |
+| Bomberman 64 | **Functioning — owner-reported**; installer unavailable |
+| Bomberman 64: The Second Attack! | **Functioning — owner-reported**; installer unavailable |
+| Bomberman Hero | **Functioning — owner-reported**; installer unavailable |
+| Castlevania: Legacy of Darkness | **Functioning — owner-reported**; installer unavailable |
+| Conker’s Bad Fur Day | **Functioning — owner-reported**; installer unavailable |
+| Diddy Kong Racing | **Functioning — owner-reported**; installer unavailable |
+| Donkey Kong 64 | **Functioning — owner-reported**; installer unavailable |
+| Doom 64 | **Functioning — owner-reported**; installer unavailable |
+| Dr. Mario 64 | **Functioning — owner-reported**; installer unavailable |
+| Duke Nukem 64 | **Functioning — owner-reported**; installer unavailable |
+| Duke Nukem: Zero Hour | **Functioning — owner-reported**; installer unavailable |
+| F-Zero X | **Functioning — owner-reported**; installer unavailable |
+| Glover | **Functioning — owner-reported**; installer unavailable |
+| GoldenEye 007 | **Functioning — owner-reported**; installer unavailable |
+| Harvest Moon 64 | **Functioning — owner-reported**; installer unavailable |
+| Hybrid Heaven | **Functioning — owner-reported**; installer unavailable |
+| Jet Force Gemini | **Functioning — owner-reported**; installer unavailable |
+| Kirby 64: The Crystal Shards | **Functioning — owner-reported**; installer unavailable |
+| Mario Kart 64 | **Functioning — owner-reported**; installer unavailable |
+| Mario Party | **Functioning — owner-reported**; installer unavailable |
+| Mario Party 2 | **Functioning — owner-reported**; installer unavailable |
+| Mario Party 3 | **Functioning — owner-reported**; installer unavailable |
+| Mega Man 64 | **Functioning — owner-reported**; installer unavailable |
+| Mischief Makers | **Functioning — owner-reported**; installer unavailable |
+| Mortal Kombat Trilogy | **Functioning — owner-reported**; installer unavailable |
+| Mystical Ninja Starring Goemon | **Functioning — owner-reported**; installer unavailable |
+| Paper Mario | **Functioning — owner-reported**; installer unavailable |
+| Perfect Dark | **Functioning — owner-reported**; installer unavailable |
+| Pilotwings 64 | **Functioning — owner-reported**; installer unavailable |
+| Quest 64 | **Functioning — owner-reported**; installer unavailable |
+| Rampage 2: Universal Tour | **Functioning — owner-reported**; installer unavailable |
+| Rampage: World Tour | **Functioning — owner-reported**; installer unavailable |
+| Road Rash 64 | **Functioning — owner-reported**; installer unavailable |
+| Rush 2: Extreme Racing USA | **Functioning — owner-reported**; installer unavailable |
+| San Francisco Rush 2049 | **Functioning — owner-reported**; installer unavailable |
+| Snowboard Kids | **Functioning — owner-reported**; installer unavailable |
+| Snowboard Kids 2 | **Functioning — owner-reported**; installer unavailable |
+| Space Station Silicon Valley | **Functioning — owner-reported**; installer unavailable |
+| Star Fox 64 | **Functioning — owner-reported**; installer unavailable |
+| Star Wars Episode I: Racer | **Functioning — owner-reported**; installer unavailable |
+| Star Wars: Rogue Squadron | **Functioning — owner-reported**; installer unavailable |
+| StarCraft 64 | **Functioning — owner-reported**; installer unavailable |
+| Super Mario 64 | **Functioning — owner-reported**; installer unavailable |
+| Super Smash Bros. | **Functioning — owner-reported**; installer unavailable |
+| The Legend of Zelda: Majora’s Mask | **Functioning — owner-reported**; installer unavailable |
+| The Legend of Zelda: Ocarina of Time | **Functioning — owner-reported**; installer unavailable |
+| Tony Hawk's Pro Skater | **Functioning — owner-reported**; installer unavailable |
+| Turok: Rage Wars | **Functioning — owner-reported**; installer unavailable |
+| WCW vs. nWo: World Tour | **Functioning — owner-reported**; installer unavailable |
+| WCW/nWo Revenge | **Functioning — owner-reported**; installer unavailable |
+| Wave Race 64 | **Functioning — owner-reported**; installer unavailable |
+| Wayne Gretzky’s 3D Hockey | **Functioning — owner-reported**; installer unavailable |
+| Yoshi’s Story | **Functioning — owner-reported**; installer unavailable |
 
 ## Updates and support
 
